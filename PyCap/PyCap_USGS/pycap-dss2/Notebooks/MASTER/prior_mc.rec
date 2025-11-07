@@ -1,0 +1,714 @@
+             pestpp-ies - a GLM iterative Ensemble Smoother
+for PEST(++) datasets 
+
+                 by the PEST++ developement team
+
+
+
+
+
+version: 5.1.21
+binary compiled on Aug 30 2022 at 14:28:14
+
+using control file: "prior_mc.pst"
+in directory: "C:\Users\pruita\Documents\LPR_redux\PyCap\PyCap_USGS\pycap-dss\Notebooks\MASTER"
+on host: "NRCODG225003524"
+started at 11/06/25 15:15:29
+
+...reading external file 'prior_mc.pargp_data.csv'
+...header line: PARGPNME,INCTYP,DERINC,DERINCLB,FORCEN,DERINCMUL,DERMTHD,SPLITTHRESH,SPLITRELDIFF,SPLITACTION
+...read 4 lines from external file
+...reading external file 'prior_mc.par_data.csv'
+...header line: PARNME,PARTRANS,PARCHGLIM,PARVAL1,PARLBND,PARUBND,PARGP,SCALE,OFFSET,DERCOM
+...read 330 lines from external file
+...reading external file 'prior_mc.obs_data.csv'
+...header line: OBSNME,OBSVAL,WEIGHT,OBGNME
+...read 120013 lines from external file
+...reading external file 'prior_mc.tplfile_data.csv'
+...header line: PEST_FILE,MODEL_FILE
+...read 2 lines from external file
+...reading external file 'prior_mc.insfile_data.csv'
+...header line: PEST_FILE,MODEL_FILE
+...read 2 lines from external file
+
+    This software has been approved for release by the
+    U.S.Geological Survey(USGS).Although the software has 
+    been subjected to rigorous review, the USGS reserves the
+    right to update the software as needed pursuant to further
+    analysisand review.No warranty, expressed or implied, is 
+    made by the USGS or the U.S.Government as to the
+    functionality of the softwareand related material nor shall
+    the fact of release constitute any such warranty.
+    Furthermore, the software is released on condition that
+    neither the USGS nor the U.S.Government shall be held
+    liable for any damages resulting from its authorized 
+    or unauthorized use.
+
+
+Case dimensions:- 
+    Number of parameters = 329
+    Number of adjustable parameters = 329
+    Number of observations = 120012
+    Number of prior estimates = 0
+
+PEST Control Information
+    relparmax = 1
+    facparmax = 1.1
+    facorig = 0.001
+    phiredswh = 0.1
+    noptmax = -1
+    phiredstp = 0.01
+    nphistp = 3
+    nphinored = 3
+    relparstp = 0.01
+    nrelpar = 3
+
+
+    PEST++ OPTIONS: 
+
+...general options (used in multiple tools): 
+svd_pack: redsvd
+lambda_scale_fac: 0.75,1,1.1,
+forgive_unknown_args: 0
+max_run_fail: 3
+panther_poll_interval: 1
+parameter_covariance: 
+observation_covariance: 
+hotstart_resfile: 
+overdue_resched_fac: 1.15
+overdue_giveup_fac: 100
+overdue_giveup_minutes: 1e+30
+condor_submit_file: 
+tie_by_group: 0
+par_sigma_range: 6
+enforce_tied_bounds: 0
+debug_parse_only: 0
+check_tplins: 1
+fill_tpl_zeros: 0
+tpl_force_decimal: 0
+additional_ins_delimiters: 
+random_seed: 358183147
+num_tpl_ins_threads: 1
+save_binary: 0
+ensemble_output_precision: 6
+panther_echo: 1
+panther_agent_restart_on_error: 0
+panther_agent_no_ping_timeout_secs: -1
+panther_debug_loop: 0
+debug_check_par_en_consistency: 0
+panther_agent_freeze_on_fail: 0
+panther_transfer_on_finish: 
+panther_transfer_on_fail: 
+
+...pestpp-glm specific options:
+max_n_super: 1000000
+super_eigthresh: 1e-06
+n_iter_base: 1000000
+n_iter_super: 0
+super_relparmax: 0.1
+max_super_frz_iter: 20
+max_reg_iter: 20
+lambdas: 0.1,1,10,100,1000,
+iteration_summary: 0
+der_forgive: 1
+uncertainty: 1
+forecasts: 
+base_jacobian: 
+glm_num_reals: 0
+jac_scale: 1
+glm_normal_form: DIAG
+glm_debug_der_fail: 0
+glm_debug_lamb_fail: 0
+glm_debug_real_fail: 0
+glm_accept_mc_phi: 0
+glm_rebase_super: 0
+glm_iter_mc: 0
+glm_high_2nd_iter_phi: 0
+
+...pestpp-swp options:
+sweep_parameter_csv_file: 
+sweep_output_csv_file: sweep_out.csv
+sweep_chunk: 500
+sweep_forgive: 0
+sweep_base_run: 0
+sweep_include_regul_phi: 0
+
+...pestpp-opt options:
+opt_objective_function: 
+opt_coin_log: 1
+opt_skip_final: 0
+opt_std_weights: 0
+opt_stack_size: 0
+opt_par_stack: 
+opt_obs_stack: 
+opt_decision_variable_groups: 
+opt_external_variable_groups: 
+opt_constraint_groups: 
+opt_risk: 0.5
+opt_iter_derinc_fac: 1
+opt_direction: 1
+opt_iter_tol: 0.001
+opt_recalc_fosm_every: 1
+opt_chance_points: SINGLE
+
+...pestpp-sqp options:
+sqp_dv_en: 
+sqp_obs_restart_en: 
+sqp_num_reals: -1
+sqp_update_hessian: 0
+sqp_scale_facs:
+  1e-05
+  0.0001
+  0.001
+  0.005
+  0.01
+  0.05
+  0.075
+  0.1
+  0.25
+  0.5
+  1
+
+...pestpp-mou options:
+mou_generator: DE
+mou_population_size: 100
+mou_dv_population_file: 
+mou_obs_population_restart_file: 
+mou_objectives: 
+mou_max_archive_size: 500
+mou_risk_objective: 0
+mou_verbose_level: 1
+mou_env_selector: NSGA
+mou_mating_selector: TOURNAMENT
+mou_crossover_prob: 0.75
+mou_mutation_prob: -999
+mou_de_f: 0.8
+mou_save_population_every: -1
+mou_pso_omega: 0.7
+mou_pso_social_const: 2
+mou_pso_cognitive: 2
+mou_population_schedule: 
+mou_simplex_reflections:10
+mou_simplex_factors: 
+ 0.5
+ 0.6
+ 0.7
+ 0.8
+mou_simplex_mutation: 0
+
+...shared pestpp-ies/pestpp-da options:
+(note: 'da' args override 'ies' args when using pestpp-da)
+ies_parameter_ensemble: 
+ies_observation_ensemble: 
+ies_weights_ensemble: 
+ies_restart_parameter_ensemble: 
+ies_restart_observation_ensemble: 
+ies_use_approximate_solution: 1
+ies_lambda_mults: 0.1,1,10,
+ies_initial_lambda: 0
+ies_use_approx: 1
+ies_subset_size: 4
+ies_reg_factor: 0
+ies_verbose_level: 1
+ies_use_prior_scaling: 0
+ies_num_reals: 500
+ies_bad_phi: 1e+300
+ies_bad_phi_sigma: 1e+300
+ies_include_base: 1
+ies_use_empirical_prior: 0
+ies_group_draws: 1
+ies_enforce_bounds: 1
+ies_localizer: 
+ies_accept_phi_fac: 1.05
+ies_lambda_inc_fac: 10
+ies_lambda_dec_fac: 0.75
+ies_save_lambda_ensembles: 0
+ies_subset_how: RANDOM
+ies_localize_how: PARAMETERS
+ies_num_threads: -1
+ies_debug_fail_subset: 0
+ies_debug_fail_remainder: 0
+ies_debug_bad_phi: 0
+ies_debug_upgrade_only: 0
+ies_debug_high_subset_phi: 0
+ies_debug_high_upgrade_phi: 0
+ies_csv_by_reals: 1
+ies_autoadaloc: 0
+ies_autoadaloc_sigma_dist: 1
+ies_enforce_chglim: 0
+ies_center_on: 
+ies_no_noise: 0
+ies_drop_conflicts: 0
+ies_save_rescov:0
+ies_pdc_sigma_distance: -1
+ies_use_mda: 0
+ies_mda_init_fac: 10
+ies_mda_dec_fac: 0.5
+ies_localization_type: LOCAL
+ies_upgrades_in_memory: 1
+ies_ordered_binary: 1
+ies_multimodal_alpha: 1
+ies_localizer_forgive_extra: 0
+
+pestpp-sen options: 
+gsa_method: MORRIS
+gsa_morris_pooled_obs: 0
+gsa_morris_obs_sen: 1
+gsa_morris_p: 4
+gsa_morris_r: 4
+gsa_morris_delta: 0.6666
+gsa_sobol_samples: 4
+gsa_sobol_par_dist: norm
+
+pestpp-da options (those not shared with pestpp-ies):
+da_parameter_cycle_table: 
+da_observation_cycle_table: 
+da_hotstart_cycle: 0
+da_stop_cycle: 1000000000
+da_use_simulated_states: 1
+da_noptmax_schedule: 
+
+
+
+Model command line(s):- 
+    python run_pycap.py LPR_Redux.yml ts_obs.dat
+
+Model interface files:-
+    template files:
+      LPR_Redux.yml.tpl
+    model input files:
+      LPR_Redux.yml
+
+    instruction files:
+      allobs.out.ins
+    model output files:
+      allobs.out
+
+
+Parameter group information
+NAME           INCREMENT TYPE     DERIVATIVE INCREMENT    INCREMENT LOWER BOUND  FORCE CENTRAL     INCREMENT MULTIPLIER
+apportionment        RELATIVE                     0.01                        0         SWITCH                        2
+global_s             RELATIVE                     0.01                        0         SWITCH                        2
+global_t             RELATIVE                     0.01                        0         SWITCH                        2
+
+
+
+Parameter information
+NAME                                TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND         GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
+global_s                            none                    FACTOR           0.12           0.05            0.2      global_s              1              0                   1
+global_t                            log                     FACTOR           1700            600          60000      global_t              1              0                   1
+well_1013__stream_apportionment11   none                  RELATIVE         0.0013              0         0.1013 apportionment              1              0                   1
+well_1302__stream_apportionment12   none                  RELATIVE         0.0275              0         0.1275 apportionment              1              0                   1
+well_1323__stream_apportionment13   none                    FACTOR         0.2554         0.1554         0.3554 apportionment              1              0                   1
+well_1486__stream_apportionment14   none                    FACTOR         0.6416         0.5416         0.7416 apportionment              1              0                   1
+well_1584__stream_apportionment15   none                    FACTOR         0.9581         0.8581              1 apportionment              1              0                   1
+well_1589__stream_apportionment16   none                  RELATIVE         0.0936              0         0.1936 apportionment              1              0                   1
+well_1643__stream_apportionment17   none                  RELATIVE         0.0959              0         0.1959 apportionment              1              0                   1
+well_1683__stream_apportionment18   none                  RELATIVE          0.091              0          0.191 apportionment              1              0                   1
+well_1860__stream_apportionment19   none                    FACTOR         0.1224         0.0224         0.2224 apportionment              1              0                   1
+well_23610__stream_apportionment26  none                    FACTOR         0.6052         0.5052         0.7052 apportionment              1              0                   1
+well_23611__stream_apportionment27  none                    FACTOR         0.5394         0.4394         0.6394 apportionment              1              0                   1
+well_23618__stream_apportionment28  none                    FACTOR          0.594          0.494          0.694 apportionment              1              0                   1
+well_23620__stream_apportionment29  none                  RELATIVE         0.0114              0         0.1114 apportionment              1              0                   1
+well_23627__stream_apportionment30  none                    FACTOR          0.996          0.896              1 apportionment              1              0                   1
+well_23629__stream_apportionment31  none                    FACTOR         0.1288         0.0288         0.2288 apportionment              1              0                   1
+well_23630__stream_apportionment32  none                    FACTOR         0.1619         0.0619         0.2619 apportionment              1              0                   1
+well_23631__stream_apportionment33  none                    FACTOR         0.1852         0.0852         0.2852 apportionment              1              0                   1
+well_23635__stream_apportionment34  none                  RELATIVE         0.0306              0         0.1306 apportionment              1              0                   1
+well_23637__stream_apportionment35  none                  RELATIVE         0.0186              0         0.1186 apportionment              1              0                   1
+well_23638__stream_apportionment36  none                    FACTOR         0.8466         0.7466         0.9466 apportionment              1              0                   1
+well_23639__stream_apportionment37  none                    FACTOR         0.3237         0.2237         0.4237 apportionment              1              0                   1
+well_23645__stream_apportionment38  none                    FACTOR         0.9442         0.8442              1 apportionment              1              0                   1
+well_23646__stream_apportionment39  none                    FACTOR          0.813          0.713          0.913 apportionment              1              0                   1
+well_23648__stream_apportionment40  none                  RELATIVE         0.0292              0         0.1292 apportionment              1              0                   1
+well_23653__stream_apportionment41  none                    FACTOR         0.9911         0.8911              1 apportionment              1              0                   1
+well_23695__stream_apportionment42  none                    FACTOR         0.1556         0.0556         0.2556 apportionment              1              0                   1
+well_23697__stream_apportionment43  none                  RELATIVE         0.0204              0         0.1204 apportionment              1              0                   1
+well_23698__stream_apportionment44  none                  RELATIVE         0.0243              0         0.1243 apportionment              1              0                   1
+well_23699__stream_apportionment45  none                  RELATIVE         0.0204              0         0.1204 apportionment              1              0                   1
+well_23700__stream_apportionment46  none                  RELATIVE         0.0356              0         0.1356 apportionment              1              0                   1
+well_23709__stream_apportionment47  none                    FACTOR         0.1329         0.0329         0.2329 apportionment              1              0                   1
+well_23710__stream_apportionment48  none                  RELATIVE         0.0269              0         0.1269 apportionment              1              0                   1
+well_23715__stream_apportionment49  none                  RELATIVE         0.0859              0         0.1859 apportionment              1              0                   1
+well_23716__stream_apportionment50  none                  RELATIVE         0.0675              0         0.1675 apportionment              1              0                   1
+well_23720__stream_apportionment51  none                    FACTOR         0.2836         0.1836         0.3836 apportionment              1              0                   1
+well_23721__stream_apportionment52  none                    FACTOR         0.2777         0.1777         0.3777 apportionment              1              0                   1
+well_23722__stream_apportionment53  none                    FACTOR         0.6135         0.5135         0.7135 apportionment              1              0                   1
+well_23723__stream_apportionment54  none                  RELATIVE         0.0656              0         0.1656 apportionment              1              0                   1
+well_23726__stream_apportionment55  none                  RELATIVE         0.0897              0         0.1897 apportionment              1              0                   1
+well_23727__stream_apportionment56  none                    FACTOR         0.1253         0.0253         0.2253 apportionment              1              0                   1
+well_23728__stream_apportionment57  none                  RELATIVE          0.072              0          0.172 apportionment              1              0                   1
+well_23729__stream_apportionment58  none                    FACTOR         0.1326         0.0326         0.2326 apportionment              1              0                   1
+well_23751__stream_apportionment59  none                  RELATIVE         0.0803              0         0.1803 apportionment              1              0                   1
+well_23752__stream_apportionment60  none                    FACTOR         0.8536         0.7536         0.9536 apportionment              1              0                   1
+well_23753__stream_apportionment61  none                    FACTOR         0.6221         0.5221         0.7221 apportionment              1              0                   1
+well_23754__stream_apportionment62  none                  RELATIVE         0.0363              0         0.1363 apportionment              1              0                   1
+well_23755__stream_apportionment63  none                    FACTOR         0.9815         0.8815              1 apportionment              1              0                   1
+well_23756__stream_apportionment64  none                  RELATIVE          0.059              0          0.159 apportionment              1              0                   1
+well_23757__stream_apportionment65  none                  RELATIVE         0.0209              0         0.1209 apportionment              1              0                   1
+well_23758__stream_apportionment66  none                  RELATIVE         0.0379              0         0.1379 apportionment              1              0                   1
+well_23770__stream_apportionment67  none                    FACTOR         0.9489         0.8489              1 apportionment              1              0                   1
+well_23776__stream_apportionment68  none                  RELATIVE         0.0952              0         0.1952 apportionment              1              0                   1
+well_23778__stream_apportionment69  none                    FACTOR         0.1305         0.0305         0.2305 apportionment              1              0                   1
+well_23781__stream_apportionment70  none                    FACTOR         0.7044         0.6044         0.8044 apportionment              1              0                   1
+well_23790__stream_apportionment71  none                  RELATIVE         0.0156              0         0.1156 apportionment              1              0                   1
+well_23791__stream_apportionment72  none                  RELATIVE         0.0206              0         0.1206 apportionment              1              0                   1
+well_23794__stream_apportionment73  none                    FACTOR         0.7903         0.6903         0.8903 apportionment              1              0                   1
+well_23795__stream_apportionment74  none                    FACTOR         0.1361         0.0361         0.2361 apportionment              1              0                   1
+well_23798__stream_apportionment75  none                    FACTOR         0.3916         0.2916         0.4916 apportionment              1              0                   1
+well_23800__stream_apportionment76  none                    FACTOR         0.7564         0.6564         0.8564 apportionment              1              0                   1
+well_23807__stream_apportionment77  none                  RELATIVE         0.0561              0         0.1561 apportionment              1              0                   1
+well_23816__stream_apportionment78  none                    FACTOR         0.9538         0.8538              1 apportionment              1              0                   1
+well_23818__stream_apportionment79  none                  RELATIVE          0.015              0          0.115 apportionment              1              0                   1
+well_23820__stream_apportionment80  none                  RELATIVE         0.0847              0         0.1847 apportionment              1              0                   1
+well_23823__stream_apportionment81  none                  RELATIVE         0.0157              0         0.1157 apportionment              1              0                   1
+well_23836__stream_apportionment82  none                    FACTOR         0.9589         0.8589              1 apportionment              1              0                   1
+well_23837__stream_apportionment83  none                    FACTOR          0.825          0.725          0.925 apportionment              1              0                   1
+well_23846__stream_apportionment84  none                    FACTOR         0.1148         0.0148         0.2148 apportionment              1              0                   1
+well_23847__stream_apportionment85  none                    FACTOR          0.578          0.478          0.678 apportionment              1              0                   1
+well_23848__stream_apportionment86  none                    FACTOR         0.5052         0.4052         0.6052 apportionment              1              0                   1
+well_23851__stream_apportionment87  none                    FACTOR         0.6419         0.5419         0.7419 apportionment              1              0                   1
+well_23864__stream_apportionment88  none                    FACTOR         0.1723         0.0723         0.2723 apportionment              1              0                   1
+well_23865__stream_apportionment89  none                    FACTOR         0.1432         0.0432         0.2432 apportionment              1              0                   1
+well_23866__stream_apportionment90  none                  RELATIVE         0.0839              0         0.1839 apportionment              1              0                   1
+well_23867__stream_apportionment91  none                  RELATIVE         0.0173              0         0.1173 apportionment              1              0                   1
+well_23868__stream_apportionment92  none                  RELATIVE         0.0096              0         0.1096 apportionment              1              0                   1
+well_23869__stream_apportionment93  none                  RELATIVE         0.0275              0         0.1275 apportionment              1              0                   1
+well_23870__stream_apportionment94  none                  RELATIVE         0.0281              0         0.1281 apportionment              1              0                   1
+well_23876__stream_apportionment95  none                    FACTOR          0.957          0.857              1 apportionment              1              0                   1
+well_23881__stream_apportionment96  none                    FACTOR         0.4588         0.3588         0.5588 apportionment              1              0                   1
+well_23883__stream_apportionment97  none                  RELATIVE         0.0369              0         0.1369 apportionment              1              0                   1
+well_23886__stream_apportionment98  none                  RELATIVE         0.0444              0         0.1444 apportionment              1              0                   1
+well_23888__stream_apportionment99  none                    FACTOR         0.7608         0.6608         0.8608 apportionment              1              0                   1
+well_23889__stream_apportionment100 none                    FACTOR         0.7371         0.6371         0.8371 apportionment              1              0                   1
+well_23890__stream_apportionment101 none                  RELATIVE         0.0542              0         0.1542 apportionment              1              0                   1
+well_23895__stream_apportionment102 none                    FACTOR         0.1401         0.0401         0.2401 apportionment              1              0                   1
+well_23898__stream_apportionment103 none                  RELATIVE         0.0116              0         0.1116 apportionment              1              0                   1
+well_23908__stream_apportionment104 none                    FACTOR         0.3927         0.2927         0.4927 apportionment              1              0                   1
+well_23909__stream_apportionment105 none                    FACTOR         0.5584         0.4584         0.6584 apportionment              1              0                   1
+well_23910__stream_apportionment106 none                  RELATIVE         0.0159              0         0.1159 apportionment              1              0                   1
+well_23913__stream_apportionment107 none                  RELATIVE         0.0061              0         0.1061 apportionment              1              0                   1
+well_23915__stream_apportionment108 none                  RELATIVE         0.0222              0         0.1222 apportionment              1              0                   1
+well_23919__stream_apportionment109 none                    FACTOR         0.8116         0.7116         0.9116 apportionment              1              0                   1
+well_23926__stream_apportionment110 none                  RELATIVE         0.0452              0         0.1452 apportionment              1              0                   1
+well_23928__stream_apportionment111 none                    FACTOR         0.4229         0.3229         0.5229 apportionment              1              0                   1
+well_23929__stream_apportionment112 none                    FACTOR         0.8968         0.7968         0.9968 apportionment              1              0                   1
+well_23930__stream_apportionment113 none                    FACTOR         0.5494         0.4494         0.6494 apportionment              1              0                   1
+well_23934__stream_apportionment114 none                    FACTOR         0.9928         0.8928              1 apportionment              1              0                   1
+well_23936__stream_apportionment115 none                    FACTOR         0.7501         0.6501         0.8501 apportionment              1              0                   1
+well_23937__stream_apportionment116 none                    FACTOR         0.5287         0.4287         0.6287 apportionment              1              0                   1
+well_23939__stream_apportionment117 none                    FACTOR         0.8864         0.7864         0.9864 apportionment              1              0                   1
+well_23942__stream_apportionment118 none                  RELATIVE         0.0444              0         0.1444 apportionment              1              0                   1
+well_23944__stream_apportionment119 none                  RELATIVE         0.0958              0         0.1958 apportionment              1              0                   1
+well_23948__stream_apportionment120 none                    FACTOR          0.341          0.241          0.441 apportionment              1              0                   1
+well_23956__stream_apportionment121 none                    FACTOR         0.2138         0.1138         0.3138 apportionment              1              0                   1
+well_23961__stream_apportionment122 none                  RELATIVE         0.0028              0         0.1028 apportionment              1              0                   1
+well_23962__stream_apportionment123 none                    FACTOR         0.1476         0.0476         0.2476 apportionment              1              0                   1
+well_23963__stream_apportionment124 none                  RELATIVE         0.0488              0         0.1488 apportionment              1              0                   1
+well_23966__stream_apportionment125 none                  RELATIVE         0.0381              0         0.1381 apportionment              1              0                   1
+well_23967__stream_apportionment126 none                    FACTOR         0.3685         0.2685         0.4685 apportionment              1              0                   1
+well_23972__stream_apportionment127 none                  RELATIVE         0.0426              0         0.1426 apportionment              1              0                   1
+well_23977__stream_apportionment128 none                    FACTOR         0.5259         0.4259         0.6259 apportionment              1              0                   1
+well_23978__stream_apportionment129 none                  RELATIVE         0.0295              0         0.1295 apportionment              1              0                   1
+well_23979__stream_apportionment130 none                  RELATIVE         0.0363              0         0.1363 apportionment              1              0                   1
+well_23980__stream_apportionment131 none                  RELATIVE         0.0556              0         0.1556 apportionment              1              0                   1
+well_23981__stream_apportionment132 none                    FACTOR         0.7511         0.6511         0.8511 apportionment              1              0                   1
+well_23983__stream_apportionment133 none                    FACTOR         0.1076         0.0076         0.2076 apportionment              1              0                   1
+well_23984__stream_apportionment134 none                    FACTOR         0.2378         0.1378         0.3378 apportionment              1              0                   1
+well_23985__stream_apportionment135 none                    FACTOR         0.5827         0.4827         0.6827 apportionment              1              0                   1
+well_23987__stream_apportionment136 none                    FACTOR         0.1299         0.0299         0.2299 apportionment              1              0                   1
+well_23998__stream_apportionment137 none                  RELATIVE         0.0111              0         0.1111 apportionment              1              0                   1
+well_24003__stream_apportionment138 none                    FACTOR         0.1987         0.0987         0.2987 apportionment              1              0                   1
+well_24005__stream_apportionment139 none                    FACTOR         0.3195         0.2195         0.4195 apportionment              1              0                   1
+well_24010__stream_apportionment140 none                    FACTOR         0.8453         0.7453         0.9453 apportionment              1              0                   1
+well_24011__stream_apportionment141 none                    FACTOR         0.8339         0.7339         0.9339 apportionment              1              0                   1
+well_24012__stream_apportionment142 none                  RELATIVE          0.063              0          0.163 apportionment              1              0                   1
+well_24016__stream_apportionment143 none                  RELATIVE         0.0047              0         0.1047 apportionment              1              0                   1
+well_24024__stream_apportionment144 none                  RELATIVE         0.0316              0         0.1316 apportionment              1              0                   1
+well_24030__stream_apportionment145 none                    FACTOR         0.1427         0.0427         0.2427 apportionment              1              0                   1
+well_24033__stream_apportionment146 none                  RELATIVE         0.0652              0         0.1652 apportionment              1              0                   1
+well_24036__stream_apportionment147 none                  RELATIVE         0.0389              0         0.1389 apportionment              1              0                   1
+well_24037__stream_apportionment148 none                  RELATIVE         0.0936              0         0.1936 apportionment              1              0                   1
+well_24042__stream_apportionment149 none                    FACTOR         0.1086         0.0086         0.2086 apportionment              1              0                   1
+well_24043__stream_apportionment150 none                  RELATIVE         0.0133              0         0.1133 apportionment              1              0                   1
+well_24045__stream_apportionment151 none                    FACTOR         0.6563         0.5563         0.7563 apportionment              1              0                   1
+well_24047__stream_apportionment152 none                    FACTOR         0.3794         0.2794         0.4794 apportionment              1              0                   1
+well_24049__stream_apportionment153 none                    FACTOR         0.4496         0.3496         0.5496 apportionment              1              0                   1
+well_24059__stream_apportionment154 none                    FACTOR         0.1678         0.0678         0.2678 apportionment              1              0                   1
+well_24063__stream_apportionment155 none                    FACTOR         0.2636         0.1636         0.3636 apportionment              1              0                   1
+well_24066__stream_apportionment156 none                  RELATIVE         0.0174              0         0.1174 apportionment              1              0                   1
+well_24080__stream_apportionment157 none                  RELATIVE         0.0252              0         0.1252 apportionment              1              0                   1
+well_24091__stream_apportionment158 none                    FACTOR         0.1841         0.0841         0.2841 apportionment              1              0                   1
+well_24093__stream_apportionment159 none                    FACTOR         0.3927         0.2927         0.4927 apportionment              1              0                   1
+well_24110__stream_apportionment160 none                    FACTOR         0.2756         0.1756         0.3756 apportionment              1              0                   1
+well_24120__stream_apportionment161 none                  RELATIVE         0.0277              0         0.1277 apportionment              1              0                   1
+well_24121__stream_apportionment162 none                    FACTOR         0.3061         0.2061         0.4061 apportionment              1              0                   1
+well_24125__stream_apportionment163 none                    FACTOR         0.6212         0.5212         0.7212 apportionment              1              0                   1
+well_24130__stream_apportionment164 none                  RELATIVE           0.05              0           0.15 apportionment              1              0                   1
+well_24135__stream_apportionment165 none                  RELATIVE         0.0047              0         0.1047 apportionment              1              0                   1
+well_24137__stream_apportionment166 none                    FACTOR         0.6799         0.5799         0.7799 apportionment              1              0                   1
+well_24165__stream_apportionment167 none                    FACTOR         0.1591         0.0591         0.2591 apportionment              1              0                   1
+well_24166__stream_apportionment168 none                    FACTOR          0.125          0.025          0.225 apportionment              1              0                   1
+well_24169__stream_apportionment169 none                  RELATIVE         0.0394              0         0.1394 apportionment              1              0                   1
+well_24172__stream_apportionment170 none                    FACTOR         0.3301         0.2301         0.4301 apportionment              1              0                   1
+well_24195__stream_apportionment171 none                    FACTOR         0.1631         0.0631         0.2631 apportionment              1              0                   1
+well_24197__stream_apportionment172 none                    FACTOR         0.8237         0.7237         0.9237 apportionment              1              0                   1
+well_24203__stream_apportionment173 none                    FACTOR         0.8453         0.7453         0.9453 apportionment              1              0                   1
+well_24216__stream_apportionment174 none                  RELATIVE         0.0128              0         0.1128 apportionment              1              0                   1
+well_24225__stream_apportionment175 none                    FACTOR         0.3787         0.2787         0.4787 apportionment              1              0                   1
+well_24226__stream_apportionment176 none                    FACTOR         0.5021         0.4021         0.6021 apportionment              1              0                   1
+well_24227__stream_apportionment177 none                    FACTOR         0.3443         0.2443         0.4443 apportionment              1              0                   1
+well_24239__stream_apportionment178 none                    FACTOR         0.9724         0.8724              1 apportionment              1              0                   1
+well_24240__stream_apportionment179 none                    FACTOR         0.2572         0.1572         0.3572 apportionment              1              0                   1
+well_24247__stream_apportionment180 none                  RELATIVE          0.071              0          0.171 apportionment              1              0                   1
+well_24249__stream_apportionment181 none                    FACTOR         0.1061         0.0061         0.2061 apportionment              1              0                   1
+well_24252__stream_apportionment182 none                    FACTOR         0.1067         0.0067         0.2067 apportionment              1              0                   1
+well_24253__stream_apportionment183 none                  RELATIVE         0.0866              0         0.1866 apportionment              1              0                   1
+well_24256__stream_apportionment184 none                    FACTOR         0.1136         0.0136         0.2136 apportionment              1              0                   1
+well_24265__stream_apportionment185 none                    FACTOR         0.4425         0.3425         0.5425 apportionment              1              0                   1
+well_24266__stream_apportionment186 none                    FACTOR         0.2558         0.1558         0.3558 apportionment              1              0                   1
+well_24274__stream_apportionment187 none                    FACTOR         0.9315         0.8315              1 apportionment              1              0                   1
+well_24279__stream_apportionment188 none                    FACTOR         0.2597         0.1597         0.3597 apportionment              1              0                   1
+well_24283__stream_apportionment189 none                  RELATIVE         0.0592              0         0.1592 apportionment              1              0                   1
+well_24285__stream_apportionment190 none                  RELATIVE         0.0234              0         0.1234 apportionment              1              0                   1
+well_24286__stream_apportionment191 none                  RELATIVE         0.0251              0         0.1251 apportionment              1              0                   1
+well_24291__stream_apportionment192 none                    FACTOR         0.5964         0.4964         0.6964 apportionment              1              0                   1
+well_24293__stream_apportionment193 none                    FACTOR         0.3144         0.2144         0.4144 apportionment              1              0                   1
+well_24294__stream_apportionment194 none                  RELATIVE         0.0313              0         0.1313 apportionment              1              0                   1
+well_24302__stream_apportionment195 none                  RELATIVE         0.0319              0         0.1319 apportionment              1              0                   1
+well_24305__stream_apportionment196 none                  RELATIVE         0.0173              0         0.1173 apportionment              1              0                   1
+well_24307__stream_apportionment197 none                    FACTOR         0.2683         0.1683         0.3683 apportionment              1              0                   1
+well_24311__stream_apportionment198 none                    FACTOR         0.2455         0.1455         0.3455 apportionment              1              0                   1
+well_24317__stream_apportionment199 none                  RELATIVE         0.0131              0         0.1131 apportionment              1              0                   1
+well_24323__stream_apportionment200 none                    FACTOR         0.9843         0.8843              1 apportionment              1              0                   1
+well_2544__stream_apportionment20   none                    FACTOR         0.3722         0.2722         0.4722 apportionment              1              0                   1
+well_2750__stream_apportionment21   none                  RELATIVE         0.0482              0         0.1482 apportionment              1              0                   1
+well_2886__stream_apportionment22   none                    FACTOR         0.3251         0.2251         0.4251 apportionment              1              0                   1
+well_3473__stream_apportionment23   none                  RELATIVE         0.0216              0         0.1216 apportionment              1              0                   1
+well_3949__stream_apportionment24   none                    FACTOR         0.6396         0.5396         0.7396 apportionment              1              0                   1
+well_4171__stream_apportionment25   none                    FACTOR         0.1144         0.0144         0.2144 apportionment              1              0                   1
+well_418__stream_apportionment0     none                    FACTOR         0.6612         0.5612         0.7612 apportionment              1              0                   1
+well_466__stream_apportionment1     none                    FACTOR         0.9763         0.8763              1 apportionment              1              0                   1
+well_467__stream_apportionment2     none                    FACTOR         0.9548         0.8548              1 apportionment              1              0                   1
+well_490__stream_apportionment3     none                  RELATIVE         0.0116              0         0.1116 apportionment              1              0                   1
+well_509__stream_apportionment4     none                    FACTOR         0.2427         0.1427         0.3427 apportionment              1              0                   1
+well_58403__stream_apportionment201 none                    FACTOR         0.3183         0.2183         0.4183 apportionment              1              0                   1
+well_58405__stream_apportionment202 none                    FACTOR          0.788          0.688          0.888 apportionment              1              0                   1
+well_58406__stream_apportionment203 none                  RELATIVE         0.0123              0         0.1123 apportionment              1              0                   1
+well_58407__stream_apportionment204 none                  RELATIVE         0.0233              0         0.1233 apportionment              1              0                   1
+well_58410__stream_apportionment205 none                    FACTOR          0.307          0.207          0.407 apportionment              1              0                   1
+well_58411__stream_apportionment206 none                    FACTOR         0.1807         0.0807         0.2807 apportionment              1              0                   1
+well_58414__stream_apportionment207 none                    FACTOR         0.3258         0.2258         0.4258 apportionment              1              0                   1
+well_58416__stream_apportionment208 none                    FACTOR         0.3245         0.2245         0.4245 apportionment              1              0                   1
+well_58424__stream_apportionment209 none                  RELATIVE         0.0845              0         0.1845 apportionment              1              0                   1
+well_58433__stream_apportionment210 none                    FACTOR         0.2825         0.1825         0.3825 apportionment              1              0                   1
+well_58434__stream_apportionment211 none                    FACTOR         0.1165         0.0165         0.2165 apportionment              1              0                   1
+well_602__stream_apportionment5     none                  RELATIVE         0.0073              0         0.1073 apportionment              1              0                   1
+well_603__stream_apportionment6     none                  RELATIVE          0.008              0          0.108 apportionment              1              0                   1
+well_67673__stream_apportionment212 none                    FACTOR         0.1139         0.0139         0.2139 apportionment              1              0                   1
+well_67895__stream_apportionment213 none                  RELATIVE         0.0244              0         0.1244 apportionment              1              0                   1
+well_68008__stream_apportionment214 none                    FACTOR         0.6427         0.5427         0.7427 apportionment              1              0                   1
+well_68216__stream_apportionment215 none                  RELATIVE         0.0386              0         0.1386 apportionment              1              0                   1
+well_68218__stream_apportionment216 none                  RELATIVE         0.0273              0         0.1273 apportionment              1              0                   1
+well_68219__stream_apportionment217 none                  RELATIVE         0.0366              0         0.1366 apportionment              1              0                   1
+well_68220__stream_apportionment218 none                  RELATIVE         0.0351              0         0.1351 apportionment              1              0                   1
+well_68221__stream_apportionment219 none                  RELATIVE          0.044              0          0.144 apportionment              1              0                   1
+well_68294__stream_apportionment220 none                  RELATIVE         0.0009              0         0.1009 apportionment              1              0                   1
+well_68475__stream_apportionment221 none                    FACTOR         0.3131         0.2131         0.4131 apportionment              1              0                   1
+well_68529__stream_apportionment222 none                    FACTOR         0.9959         0.8959              1 apportionment              1              0                   1
+well_68693__stream_apportionment223 none                  RELATIVE         0.0525              0         0.1525 apportionment              1              0                   1
+well_68695__stream_apportionment224 none                  RELATIVE         0.0594              0         0.1594 apportionment              1              0                   1
+well_68872__stream_apportionment225 none                    FACTOR         0.2237         0.1237         0.3237 apportionment              1              0                   1
+well_68917__stream_apportionment226 none                  RELATIVE         0.0615              0         0.1615 apportionment              1              0                   1
+well_68925__stream_apportionment227 none                    FACTOR         0.3117         0.2117         0.4117 apportionment              1              0                   1
+well_68926__stream_apportionment228 none                    FACTOR         0.2951         0.1951         0.3951 apportionment              1              0                   1
+well_69049__stream_apportionment229 none                    FACTOR         0.9965         0.8965              1 apportionment              1              0                   1
+well_69065__stream_apportionment230 none                    FACTOR         0.2901         0.1901         0.3901 apportionment              1              0                   1
+well_69282__stream_apportionment231 none                    FACTOR          0.753          0.653          0.853 apportionment              1              0                   1
+well_69288__stream_apportionment232 none                  RELATIVE         0.0123              0         0.1123 apportionment              1              0                   1
+well_69289__stream_apportionment233 none                  RELATIVE         0.0046              0         0.1046 apportionment              1              0                   1
+well_69480__stream_apportionment234 none                    FACTOR         0.1321         0.0321         0.2321 apportionment              1              0                   1
+well_69508__stream_apportionment235 none                  RELATIVE         0.0239              0         0.1239 apportionment              1              0                   1
+well_69576__stream_apportionment236 none                  RELATIVE         0.0696              0         0.1696 apportionment              1              0                   1
+well_69635__stream_apportionment237 none                  RELATIVE         0.0092              0         0.1092 apportionment              1              0                   1
+well_69636__stream_apportionment238 none                  RELATIVE         0.0147              0         0.1147 apportionment              1              0                   1
+well_69638__stream_apportionment239 none                  RELATIVE         0.0147              0         0.1147 apportionment              1              0                   1
+well_69669__stream_apportionment240 none                  RELATIVE         0.0103              0         0.1103 apportionment              1              0                   1
+well_69970__stream_apportionment241 none                    FACTOR         0.9679         0.8679              1 apportionment              1              0                   1
+well_69990__stream_apportionment242 none                  RELATIVE         0.0604              0         0.1604 apportionment              1              0                   1
+well_70119__stream_apportionment243 none                    FACTOR         0.6793         0.5793         0.7793 apportionment              1              0                   1
+well_70120__stream_apportionment244 none                    FACTOR         0.6423         0.5423         0.7423 apportionment              1              0                   1
+well_70186__stream_apportionment245 none                    FACTOR         0.9598         0.8598              1 apportionment              1              0                   1
+well_70191__stream_apportionment246 none                  RELATIVE         0.0369              0         0.1369 apportionment              1              0                   1
+well_70263__stream_apportionment247 none                  RELATIVE         0.0101              0         0.1101 apportionment              1              0                   1
+well_70517__stream_apportionment248 none                  RELATIVE         0.0326              0         0.1326 apportionment              1              0                   1
+well_70519__stream_apportionment249 none                  RELATIVE         0.0327              0         0.1327 apportionment              1              0                   1
+well_70520__stream_apportionment250 none                  RELATIVE         0.0329              0         0.1329 apportionment              1              0                   1
+well_70548__stream_apportionment251 none                  RELATIVE          0.001              0          0.101 apportionment              1              0                   1
+well_70881__stream_apportionment252 none                    FACTOR         0.5963         0.4963         0.6963 apportionment              1              0                   1
+well_70961__stream_apportionment253 none                  RELATIVE         0.0936              0         0.1936 apportionment              1              0                   1
+well_70974__stream_apportionment254 none                  RELATIVE         0.0927              0         0.1927 apportionment              1              0                   1
+well_70975__stream_apportionment255 none                  RELATIVE         0.0927              0         0.1927 apportionment              1              0                   1
+well_71044__stream_apportionment256 none                    FACTOR         0.9129         0.8129              1 apportionment              1              0                   1
+well_71062__stream_apportionment257 none                    FACTOR         0.1546         0.0546         0.2546 apportionment              1              0                   1
+well_71063__stream_apportionment258 none                    FACTOR         0.2058         0.1058         0.3058 apportionment              1              0                   1
+well_71109__stream_apportionment259 none                    FACTOR         0.9185         0.8185              1 apportionment              1              0                   1
+well_71110__stream_apportionment260 none                    FACTOR         0.8965         0.7965         0.9965 apportionment              1              0                   1
+well_71117__stream_apportionment261 none                  RELATIVE         0.0932              0         0.1932 apportionment              1              0                   1
+well_71156__stream_apportionment262 none                  RELATIVE         0.0026              0         0.1026 apportionment              1              0                   1
+well_71199__stream_apportionment263 none                    FACTOR         0.1683         0.0683         0.2683 apportionment              1              0                   1
+well_71495__stream_apportionment264 none                    FACTOR          0.352          0.252          0.452 apportionment              1              0                   1
+well_71935__stream_apportionment265 none                    FACTOR         0.2618         0.1618         0.3618 apportionment              1              0                   1
+well_71998__stream_apportionment266 none                  RELATIVE          0.009              0          0.109 apportionment              1              0                   1
+well_72082__stream_apportionment267 none                    FACTOR          0.196          0.096          0.296 apportionment              1              0                   1
+well_72094__stream_apportionment268 none                  RELATIVE         0.0258              0         0.1258 apportionment              1              0                   1
+well_72095__stream_apportionment269 none                  RELATIVE         0.0242              0         0.1242 apportionment              1              0                   1
+well_72269__stream_apportionment270 none                    FACTOR         0.2027         0.1027         0.3027 apportionment              1              0                   1
+well_72301__stream_apportionment271 none                  RELATIVE         0.0626              0         0.1626 apportionment              1              0                   1
+well_72304__stream_apportionment272 none                  RELATIVE         0.0641              0         0.1641 apportionment              1              0                   1
+well_72421__stream_apportionment273 none                  RELATIVE         0.0164              0         0.1164 apportionment              1              0                   1
+well_72422__stream_apportionment274 none                  RELATIVE         0.0125              0         0.1125 apportionment              1              0                   1
+well_72436__stream_apportionment275 none                  RELATIVE         0.0455              0         0.1455 apportionment              1              0                   1
+well_72437__stream_apportionment276 none                  RELATIVE         0.0397              0         0.1397 apportionment              1              0                   1
+well_72607__stream_apportionment277 none                    FACTOR         0.2797         0.1797         0.3797 apportionment              1              0                   1
+well_72610__stream_apportionment278 none                    FACTOR          0.629          0.529          0.729 apportionment              1              0                   1
+well_72713__stream_apportionment279 none                    FACTOR         0.6071         0.5071         0.7071 apportionment              1              0                   1
+well_72756__stream_apportionment280 none                    FACTOR         0.4469         0.3469         0.5469 apportionment              1              0                   1
+well_72983__stream_apportionment281 none                    FACTOR         0.1781         0.0781         0.2781 apportionment              1              0                   1
+well_73153__stream_apportionment282 none                  RELATIVE         0.0993              0         0.1993 apportionment              1              0                   1
+well_73262__stream_apportionment283 none                  RELATIVE         0.0044              0         0.1044 apportionment              1              0                   1
+well_73280__stream_apportionment284 none                    FACTOR         0.2941         0.1941         0.3941 apportionment              1              0                   1
+well_73281__stream_apportionment285 none                    FACTOR         0.3058         0.2058         0.4058 apportionment              1              0                   1
+well_73372__stream_apportionment286 none                    FACTOR         0.1032         0.0032         0.2032 apportionment              1              0                   1
+well_73440__stream_apportionment287 none                  RELATIVE         0.0625              0         0.1625 apportionment              1              0                   1
+well_73481__stream_apportionment288 none                    FACTOR          0.149          0.049          0.249 apportionment              1              0                   1
+well_73715__stream_apportionment289 none                    FACTOR         0.8271         0.7271         0.9271 apportionment              1              0                   1
+well_73737__stream_apportionment290 none                  RELATIVE         0.0822              0         0.1822 apportionment              1              0                   1
+well_73761__stream_apportionment291 none                    FACTOR         0.6283         0.5283         0.7283 apportionment              1              0                   1
+well_73762__stream_apportionment292 none                    FACTOR         0.6836         0.5836         0.7836 apportionment              1              0                   1
+well_73906__stream_apportionment293 none                  RELATIVE         0.0922              0         0.1922 apportionment              1              0                   1
+well_73940__stream_apportionment294 none                  RELATIVE         0.0404              0         0.1404 apportionment              1              0                   1
+well_73942__stream_apportionment295 none                  RELATIVE         0.0451              0         0.1451 apportionment              1              0                   1
+well_74131__stream_apportionment296 none                  RELATIVE          0.002              0          0.102 apportionment              1              0                   1
+well_74280__stream_apportionment297 none                  RELATIVE         0.0444              0         0.1444 apportionment              1              0                   1
+well_798__stream_apportionment7     none                  RELATIVE         0.0848              0         0.1848 apportionment              1              0                   1
+well_807__stream_apportionment8     none                    FACTOR         0.1691         0.0691         0.2691 apportionment              1              0                   1
+well_84404__stream_apportionment298 none                    FACTOR         0.2402         0.1402         0.3402 apportionment              1              0                   1
+well_84409__stream_apportionment299 none                    FACTOR         0.8706         0.7706         0.9706 apportionment              1              0                   1
+well_84411__stream_apportionment300 none                    FACTOR         0.8706         0.7706         0.9706 apportionment              1              0                   1
+well_850__stream_apportionment9     none                  RELATIVE         0.0157              0         0.1157 apportionment              1              0                   1
+well_862__stream_apportionment10    none                    FACTOR         0.2424         0.1424         0.3424 apportionment              1              0                   1
+well_91103__stream_apportionment301 none                  RELATIVE         0.0309              0         0.1309 apportionment              1              0                   1
+well_91173__stream_apportionment302 none                    FACTOR          0.109          0.009          0.209 apportionment              1              0                   1
+well_91808__stream_apportionment303 none                  RELATIVE          0.005              0          0.105 apportionment              1              0                   1
+well_91996__stream_apportionment304 none                  RELATIVE          0.023              0          0.123 apportionment              1              0                   1
+well_91997__stream_apportionment305 none                  RELATIVE         0.0245              0         0.1245 apportionment              1              0                   1
+well_92099__stream_apportionment306 none                  RELATIVE         0.0423              0         0.1423 apportionment              1              0                   1
+well_92184__stream_apportionment307 none                  RELATIVE         0.0797              0         0.1797 apportionment              1              0                   1
+well_92299__stream_apportionment308 none                  RELATIVE         0.0216              0         0.1216 apportionment              1              0                   1
+well_92696__stream_apportionment309 none                  RELATIVE         0.0012              0         0.1012 apportionment              1              0                   1
+well_92714__stream_apportionment310 none                  RELATIVE         0.0529              0         0.1529 apportionment              1              0                   1
+well_92724__stream_apportionment311 none                  RELATIVE         0.0068              0         0.1068 apportionment              1              0                   1
+well_92743__stream_apportionment312 none                  RELATIVE         0.0115              0         0.1115 apportionment              1              0                   1
+well_92808__stream_apportionment313 none                  RELATIVE         0.0431              0         0.1431 apportionment              1              0                   1
+well_92885__stream_apportionment314 none                    FACTOR         0.2951         0.1951         0.3951 apportionment              1              0                   1
+well_92981__stream_apportionment315 none                  RELATIVE         0.0253              0         0.1253 apportionment              1              0                   1
+well_93142__stream_apportionment316 none                    FACTOR          0.417          0.317          0.517 apportionment              1              0                   1
+well_93143__stream_apportionment317 none                    FACTOR         0.4188         0.3188         0.5188 apportionment              1              0                   1
+well_93349__stream_apportionment318 none                    FACTOR         0.1989         0.0989         0.2989 apportionment              1              0                   1
+well_93422__stream_apportionment319 none                  RELATIVE         0.0072              0         0.1072 apportionment              1              0                   1
+well_93423__stream_apportionment320 none                  RELATIVE         0.0071              0         0.1071 apportionment              1              0                   1
+well_93424__stream_apportionment321 none                  RELATIVE         0.0079              0         0.1079 apportionment              1              0                   1
+well_93469__stream_apportionment322 none                    FACTOR         0.7911         0.6911         0.8911 apportionment              1              0                   1
+well_93832__stream_apportionment323 none                  RELATIVE         0.0103              0         0.1103 apportionment              1              0                   1
+well_94302__stream_apportionment324 none                    FACTOR         0.8775         0.7775         0.9775 apportionment              1              0                   1
+well_94988__stream_apportionment325 none                  RELATIVE         0.0703              0         0.1703 apportionment              1              0                   1
+well_95068__stream_apportionment326 none                    FACTOR         0.1252         0.0252         0.2252 apportionment              1              0                   1
+
+
+
+...more than 100,000 obs, not writing obs data
+
+Prior information
+
+   no prior information provided
+
+
+
+PEST SVD Information
+    maxsing = 10000000
+    eigthresh = 1e-06
+
+
+
+
+
+...resetting max_run_fail to 1
+...resetting overdue_giveup_fac to 2.0
+...resetting overdue_resched_fac to 1.15
+
+  ---  initializing  ---  
+
+  ---  using glm algorithm  ---  
+...using REDSVD for truncated svd solve
+...maxsing: 10000000
+...eigthresh:  1e-06
+...initializing localizer
+...not using localization
+...using lambda multipliers: 0.1 , 1 , 10 , 
+...using lambda scaling factors: 0.75 , 1 , 1.1 , 
+...acceptable phi factor:  1.05
+...lambda increase factor:  10
+...lambda decrease factor:  0.75
+...max run fail:  1
+...initializing prior parameter covariance matrix
+...parcov loaded  from parameter bounds, using par_sigma_range 6
+...initializing observation noise covariance matrix
+...obscov loaded  from observation weights
+...using reg_factor:  0
+...drawing parameter realizations:  500
+...not using prior parameter covariance matrix scaling
+...drawing observation noise realizations:  500
+...adding 'base' parameter values to ensemble
+...adding 'base' observation values to ensemble
+checking for denormal values in pe
+...saved initial parameter ensemble to  prior_mc.0.par.csv
+checking for denormal values in obs + noise ensemble
+...saved obs+noise observation ensemble (obsval + noise realizations) to  prior_mc.obs+noise.csv
+...setting weights ensemble from control file weights
+checking for denormal values in weights ensemble
+...using subset in lambda testing, number of realizations used in subset testing:  4
+...subset how:  RANDOM
+...centering on ensemble mean vector
+...running initial ensemble of size 500
+...saved initial obs ensemble to prior_mc.0.obs.csv
+
+  ---  pre-drop initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured         119826        5389.68              0         121233
+         actual        41.2215        60.2233              0        493.592
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...checking for prior-data conflict...
+
+  ---  initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured         119826        5389.68              0         121233
+         actual        41.2215        60.2233              0        493.592
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...current lambda: 0.1
+
+  ---  initialization complete  ---  
+
+
+pestpp-ies analysis complete...
+started at 11/06/25 15:15:29
+finished at 11/06/25 15:57:49
+took 42.3167 minutes

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "pycap-dss",
+    "organization": "U.S. Geological Survey and Wisconsin Department of Natural Resources",
+    "description": "analytical solutions for streamflow depletion calculations with wells",
+    "version": "1.0.0",
+    "status": "Production",
+
+    "permissions": {
+      "usageType": "openSource",
+      "licenses": [
+        {
+          "name": "Public Domain, CC0-1.0",
+          "URL": "https://code.usgs.gov/water/wsc/umid/pycap-dss/-/raw/1.0.0/LICENSE.md"
+	}
+      ]
+    },
+
+    "homepageURL": "https://code.usgs.gov/water/wsc/umid/pycap-dss",
+    "downloadURL": "https://code.usgs.gov/water/wsc/umid/pycap-dss/-/archive/1.0.0/pycap-dss-1.0.0.zip",
+    "disclaimerURL": "https://code.usgs.gov/water/wsc/umid/pycap-dss/-/raw/1.0.0/DISCLAIMER.md",
+    "repositoryURL": "https://code.usgs.gov/water/wsc/umid/pycap-dss.git",
+    "vcs": "git",
+
+    "laborHours": 80,
+
+    "tags": [
+      "groundwater",
+      "python",
+      "stream depletion",
+      "drawdown"
+    ],
+
+    "languages": [
+      "python"
+    ],
+
+    "contact": {
+      "name": "Michael Fienen",
+      "email": "mnfienen@usgs.gov"
+    },
+
+    "date": {
+      "metadataLastUpdated": "2025-06-24"
+    }
+  },
+  {
+    "name": "pycap-dss",
+    "organization": "U.S. Geological Survey and Wisconsin Department of Natural Resources",
+    "description": "analytical solutions for streamflow depletion calculations with wells",
+    "version": "main",
+    "status": "Development",
+
+    "permissions": {
+      "usageType": "openSource",
+      "licenses": [
+        {
+          "name": "Public Domain, CC0-1.0",
+          "URL": "https://code.usgs.gov/water/wsc/umid/pycap-dss/-/raw/main/LICENSE.md"
+	}
+      ]
+    },
+
+    "homepageURL": "https://code.usgs.gov/water/wsc/umid/pycap-dss",
+    "downloadURL": "https://code.usgs.gov/water/wsc/umid/pycap-dss/-/archive/main/pycap-dss-main.zip",
+    "disclaimerURL": "https://code.usgs.gov/water/wsc/umid/pycap-dss/-/raw/main/DISCLAIMER.md",
+    "repositoryURL": "https://code.usgs.gov/water/wsc/umid/pycap-dss.git",
+    "vcs": "git",
+
+    "laborHours": 80,
+
+    "tags": [
+      "groundwater",
+      "python",
+      "stream depletion",
+      "drawdown"
+    ],
+
+    "languages": [
+      "python"
+    ],
+
+    "contact": {
+      "name": "Michael Fienen",
+      "email": "mnfienen@usgs.gov"
+    },
+
+    "date": {
+      "metadataLastUpdated": "2025-06-24"
+    }
+  }
+]
