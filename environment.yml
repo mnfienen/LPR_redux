@@ -1,0 +1,33 @@
+name: pycap
+channels:
+- conda-forge
+- nodefaults
+dependencies:
+- python=3.11
+- ipython
+- jupyter
+- notebook
+- jupyterlab
+- ipykernel
+- matplotlib
+- pyyaml
+- geopandas
+- numpy
+- scipy
+- pandas
+- gdal
+- fiona
+- rasterio>=1.0
+- rasterstats
+- shapely
+- rtree
+- pyproj>=2.0
+- pyshp
+- xlrd
+- openpyxl
+- requests
+- pytest
+- pyemu
+- pip
+- pip:
+  - pycap-dss
