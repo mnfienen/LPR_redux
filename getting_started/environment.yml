@@ -28,6 +28,4 @@ dependencies:
 - requests
 - pytest
 - pyemu
-- pip
-- pip:
-  - pycap-dss
+- pycap-dss
