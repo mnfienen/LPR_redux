@@ -8,6 +8,11 @@
     Required 'group read'.  Please set up a shared document where you can sign up to read one essay.
         Be prepared to bring this perspective to group and class-wide conversations about water 'use'.
 
+[A Historic Pumping Test Movie](https://www.youtube.com/watch?v=ZNJcVQBIE0Y)
+
+    A priceless look into the history of our science ... worth watching!
+        Best watched with popcorn and a soda ... or a Bud and a Marlboro ... your choice.
+
 [Annotated bibliography on the Central Sands](https://data.wgnhs.wisc.edu/pubshare/WOFR2018-04.pdf)
     
     Compiled by WDNR and Wisconsin Geolog and Nat History Surv for their Central Sands Lakes Study. 
