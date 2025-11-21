@@ -5,27 +5,29 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-# instantiate the project with paths and filenames
-datapath = Path('.')
-outputdir = datapath/ 'output'
-pst = pyemu.Pst(
-    str(datapath / 'prior_mc.pst')
-)
-base_pars = pd.Series(index=pst.parameter_data['parnme'].index,
-                      data = pst.parameter_data['parval1'])
+def instantiate():
+    # instantiate the project with paths and filenames
+    datapath = Path('.')
+    outputdir = datapath/ 'output'
+    pst_name = str(datapath / 'prior_mc.pst')
+    pst = pyemu.Pst(
+        pst_name
+    )
+    base_pars = pd.Series(index=pst.parameter_data['parnme'].index,
+                        data = pst.parameter_data['parval1'])
 
 
 
 
-"""Instantiate the project with paths and filenames."""
-# only read out year 5 for time series ::: hard coded
-times = range(365*4,365*5+1)
+    """Instantiate the project with paths and filenames."""
+    # only read out year 5 for time series ::: hard coded
+    times = range(365*4,365*5+1)
 
-# read in the base depletion names 
-bdplobs = [i.strip() for i in open(datapath / 'basedeplobs.dat', 'r').readlines()]
+    # read in the base depletion names 
+    bdplobs = [i.strip() for i in open(datapath / 'basedeplobs.dat', 'r').readlines()]
 
-# read in the time series depletion names 
-output_ts = [i.strip() for i in open(datapath / 'ts_obs.dat', 'r').readlines()]
+    # read in the time series depletion names 
+    output_ts = [i.strip() for i in open(datapath / 'ts_obs.dat', 'r').readlines()]
 
 
 def get_results(pars, pst, bdplobs, output_ts):
@@ -53,10 +55,24 @@ def get_results(pars, pst, bdplobs, output_ts):
                         tsdf])
     return allout
 
+def ppw_worker_pycap(pst_name, host, port):
+    """Worker function for parallel processing."""
+    instantiate()
+    ppw = pyemu.os_utils.PyPestWorker(pst_name,host,port,verbose=False)
+    
+    while True:
+        pvals = ppw.get_parameters()
+        if pvals is None:
+            break
+        allout = get_results(pvals, pst, bdplobs, output_ts)
+        ppw.send_observations(allout.loc[ppw.obs_names].values)
+     
+
 
 
 
 if __name__== "__main__":
+    instantiate()
     allout1 = get_results(base_pars, pst,bdplobs, output_ts)
     print(allout1.head())
 
