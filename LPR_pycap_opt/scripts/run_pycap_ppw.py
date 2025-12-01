@@ -1,4 +1,4 @@
-import sys
+import sys, os
 import pyemu
 from pycap.analysis_project import Project
 from pathlib import Path
@@ -57,8 +57,9 @@ def get_results(pars, pst, bdplobs, output_ts):
 
 def ppw_worker_pycap(pst_name, host, port):
     """Worker function for parallel processing."""
+    print(os.getcwd())
     instantiate()
-    ppw = pyemu.os_utils.PyPestWorker(pst_name,host,port,verbose=False)
+    ppw = pyemu.os_utils.PyPestWorker(pst_name,host,port, verbose=False)
     
     while True:
         pvals = ppw.get_parameters()
