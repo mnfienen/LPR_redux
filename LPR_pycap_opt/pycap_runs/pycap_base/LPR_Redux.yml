@@ -8,7 +8,6 @@ project_properties:
   Min_S: 0.05
   Max_FracInt: 1.0
   Min_FracInt: 0.0
-  depl_method: glover_depletion
   default_dd_days: 90.0
   default_depletion_years: 5.0
   default_pumping_days: 90.0
@@ -25,7 +24,8 @@ well_418:
     apportionment: 0.6612
   stream_response:
   - LPR:418
-  dd_response: []
+  dd_response:
+  - LakeEmily
 well_466:
   name: '466'
   status: existing

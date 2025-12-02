@@ -27,5 +27,7 @@ dependencies:
 - openpyxl
 - requests
 - pytest
-- pyemu
-- pycap-dss
+- pycap-dss>=1.1.1
+- pip
+- pip:
+  - -e ../dependencies/pyemu
