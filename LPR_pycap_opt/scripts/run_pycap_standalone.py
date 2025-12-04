@@ -70,8 +70,6 @@ def get_results(pars, times, obsnames, initial_dict, bdplobs, tslox, write_csv= 
     return allout    
 
 
-
-
 def process_realization(args):
     creal, row, times, obs_names, initial_dict, bdplobs, tslox, par_names = args
     allout = get_results(row[par_names], times, obs_names, initial_dict, bdplobs, tslox)
@@ -100,23 +98,6 @@ def standalone_worker(times, initial_dict, bdplobs, tslox):
 
     runs_df.loc[:, obs_names] = obsvals
     rns.update(runs_df)
-
-
-
-# def standalone_worker(times, initial_dict, bdplobs, tslox):
-
-#     # first read in the RNS run data information
-#     rns = pyemu.helpers.RunStor('./prior_mc.rns')
-#     runs_df = rns.get_data()
-#     _,par_names,obs_names = rns.file_info('./prior_mc.rns')
-
-#     obsvals = np.zeros((len(runs_df),len(obs_names)))
-#     for i, creal in enumerate(runs_df.index):
-#         allout = get_results(runs_df.loc[creal, par_names], times, obs_names, 
-#                              initial_dict, bdplobs, tslox)
-#         obsvals[i,:] = allout.loc[obs_names].value.to_numpy()
-#     runs_df.loc[:,obs_names] = obsvals
-#     rns.update(runs_df)
 
 if __name__== "__main__":
     times, initial_dict, bdplobs, tslox = instantiate()
