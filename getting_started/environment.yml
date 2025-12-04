@@ -26,6 +26,7 @@ dependencies:
 - xlrd
 - openpyxl
 - requests
+- dash
 - pytest
 - pycap-dss>=1.1.1
 - pip
