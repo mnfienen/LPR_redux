@@ -21,7 +21,7 @@ well_418:
   pumping_days: 90
   stream_apportionment0:
     name: LPR:418
-    apportionment: 0.6612
+    apportionment: 0.5086297773758871
   stream_response:
   - LPR:418
   dd_response:
@@ -36,7 +36,7 @@ well_466:
   pumping_days: 330
   stream_apportionment1:
     name: LPR:466
-    apportionment: 0.9763
+    apportionment: 0.8222489998507545
   stream_response:
   - LPR:466
   dd_response: []
@@ -50,7 +50,7 @@ well_467:
   pumping_days: 330
   stream_apportionment2:
     name: LPR:467
-    apportionment: 0.9548
+    apportionment: 0.7689238156416542
   stream_response:
   - LPR:467
   dd_response: []
@@ -64,7 +64,7 @@ well_490:
   pumping_days: 330
   stream_apportionment3:
     name: LPR:490
-    apportionment: 0.0116
+    apportionment: 0.07537513234880114
   stream_response:
   - LPR:490
   dd_response: []
@@ -78,7 +78,7 @@ well_509:
   pumping_days: 60
   stream_apportionment4:
     name: LPR:509
-    apportionment: 0.2427
+    apportionment: 0.2900751294309643
   stream_response:
   - LPR:509
   dd_response: []
@@ -92,7 +92,7 @@ well_602:
   pumping_days: 365
   stream_apportionment5:
     name: LPR:602
-    apportionment: 0.0073
+    apportionment: 0.05779950458258394
   stream_response:
   - LPR:602
   dd_response: []
@@ -106,7 +106,7 @@ well_603:
   pumping_days: 365
   stream_apportionment6:
     name: LPR:603
-    apportionment: 0.008
+    apportionment: 0.0602600847155112
   stream_response:
   - LPR:603
   dd_response: []
@@ -120,7 +120,7 @@ well_798:
   pumping_days: 120
   stream_apportionment7:
     name: LPR:798
-    apportionment: 0.0848
+    apportionment: 0.15010364370278895
   stream_response:
   - LPR:798
   dd_response: []
@@ -134,7 +134,7 @@ well_807:
   pumping_days: 90
   stream_apportionment8:
     name: LPR:807
-    apportionment: 0.1691
+    apportionment: 0.31086549132831326
   stream_response:
   - LPR:807
   dd_response: []
@@ -148,7 +148,7 @@ well_850:
   pumping_days: 120
   stream_apportionment9:
     name: LPR:850
-    apportionment: 0.0157
+    apportionment: 0.08544106976219297
   stream_response:
   - LPR:850
   dd_response: []
@@ -162,7 +162,7 @@ well_862:
   pumping_days: 365
   stream_apportionment10:
     name: LPR:862
-    apportionment: 0.2424
+    apportionment: 0.28989901175512073
   stream_response:
   - LPR:862
   dd_response: []
@@ -176,7 +176,7 @@ well_1013:
   pumping_days: 90
   stream_apportionment11:
     name: LPR:1013
-    apportionment: 0.0013
+    apportionment: 0.03039497517258916
   stream_response:
   - LPR:1013
   dd_response: []
@@ -190,7 +190,7 @@ well_1302:
   pumping_days: 90
   stream_apportionment12:
     name: LPR:1302
-    apportionment: 0.0275
+    apportionment: 0.0923462754825312
   stream_response:
   - LPR:1302
   dd_response: []
@@ -204,7 +204,7 @@ well_1323:
   pumping_days: 30
   stream_apportionment13:
     name: LPR:1323
-    apportionment: 0.2554
+    apportionment: 0.31052422989299905
   stream_response:
   - LPR:1323
   dd_response: []
@@ -218,7 +218,7 @@ well_1486:
   pumping_days: 90
   stream_apportionment14:
     name: LPR:1486
-    apportionment: 0.6416
+    apportionment: 0.49750843256263944
   stream_response:
   - LPR:1486
   dd_response: []
@@ -232,7 +232,7 @@ well_1584:
   pumping_days: 90
   stream_apportionment15:
     name: LPR:1584
-    apportionment: 0.9581
+    apportionment: 0.7717347134308602
   stream_response:
   - LPR:1584
   dd_response: []
@@ -246,7 +246,7 @@ well_1589:
   pumping_days: 120
   stream_apportionment16:
     name: LPR:1589
-    apportionment: 0.0936
+    apportionment: 0.15804709469691988
   stream_response:
   - LPR:1589
   dd_response: []
@@ -260,7 +260,7 @@ well_1643:
   pumping_days: 90
   stream_apportionment17:
     name: LPR:1643
-    apportionment: 0.0959
+    apportionment: 0.16254490993016985
   stream_response:
   - LPR:1643
   dd_response: []
@@ -274,7 +274,7 @@ well_1683:
   pumping_days: 150
   stream_apportionment18:
     name: LPR:1683
-    apportionment: 0.091
+    apportionment: 0.1544936977568897
   stream_response:
   - LPR:1683
   dd_response: []
@@ -288,7 +288,7 @@ well_1860:
   pumping_days: 120
   stream_apportionment19:
     name: LPR:1860
-    apportionment: 0.1224
+    apportionment: 0.19241263468065123
   stream_response:
   - LPR:1860
   dd_response: []
@@ -302,7 +302,7 @@ well_2544:
   pumping_days: 180
   stream_apportionment20:
     name: LPR:2544
-    apportionment: 0.3722
+    apportionment: 0.43503901950023305
   stream_response:
   - LPR:2544
   dd_response: []
@@ -316,7 +316,7 @@ well_2750:
   pumping_days: 120
   stream_apportionment21:
     name: LPR:2750
-    apportionment: 0.0482
+    apportionment: 0.10673235774223354
   stream_response:
   - LPR:2750
   dd_response: []
@@ -330,7 +330,7 @@ well_2886:
   pumping_days: 365
   stream_apportionment22:
     name: LPR:2886
-    apportionment: 0.3251
+    apportionment: 0.268186851243894
   stream_response:
   - LPR:2886
   dd_response: []
@@ -344,7 +344,7 @@ well_3473:
   pumping_days: 120
   stream_apportionment23:
     name: LPR:3473
-    apportionment: 0.0216
+    apportionment: 0.09841253851613434
   stream_response:
   - LPR:3473
   dd_response: []
@@ -358,7 +358,7 @@ well_3949:
   pumping_days: 90
   stream_apportionment24:
     name: LPR:3949
-    apportionment: 0.6396
+    apportionment: 0.5112533614539748
   stream_response:
   - LPR:3949
   dd_response: []
@@ -372,7 +372,7 @@ well_4171:
   pumping_days: 180
   stream_apportionment25:
     name: LPR:4171
-    apportionment: 0.1144
+    apportionment: 0.23763552383150552
   stream_response:
   - LPR:4171
   dd_response: []
@@ -386,7 +386,7 @@ well_23610:
   pumping_days: 120
   stream_apportionment26:
     name: LPR:23610
-    apportionment: 0.6052
+    apportionment: 0.4683233726218617
   stream_response:
   - LPR:23610
   dd_response: []
@@ -400,7 +400,7 @@ well_23611:
   pumping_days: 90
   stream_apportionment27:
     name: LPR:23611
-    apportionment: 0.5394
+    apportionment: 0.5197148128205725
   stream_response:
   - LPR:23611
   dd_response: []
@@ -414,7 +414,7 @@ well_23618:
   pumping_days: 90
   stream_apportionment28:
     name: LPR:23618
-    apportionment: 0.594
+    apportionment: 0.4718403314534055
   stream_response:
   - LPR:23618
   dd_response: []
@@ -428,7 +428,7 @@ well_23620:
   pumping_days: 90
   stream_apportionment29:
     name: LPR:23620
-    apportionment: 0.0114
+    apportionment: 0.07268464653634013
   stream_response:
   - LPR:23620
   dd_response: []
@@ -442,7 +442,7 @@ well_23627:
   pumping_days: 120
   stream_apportionment30:
     name: LPR:23627
-    apportionment: 0.996
+    apportionment: 0.9406088466789186
   stream_response:
   - LPR:23627
   dd_response: []
@@ -456,7 +456,7 @@ well_23629:
   pumping_days: 120
   stream_apportionment31:
     name: LPR:23629
-    apportionment: 0.1288
+    apportionment: 0.22249205379706793
   stream_response:
   - LPR:23629
   dd_response: []
@@ -470,7 +470,7 @@ well_23630:
   pumping_days: 120
   stream_apportionment32:
     name: LPR:23630
-    apportionment: 0.1619
+    apportionment: 0.20855641577902023
   stream_response:
   - LPR:23630
   dd_response: []
@@ -484,7 +484,7 @@ well_23631:
   pumping_days: 90
   stream_apportionment33:
     name: LPR:23631
-    apportionment: 0.1852
+    apportionment: 0.26043715471049006
   stream_response:
   - LPR:23631
   dd_response: []
@@ -498,7 +498,7 @@ well_23635:
   pumping_days: 120
   stream_apportionment34:
     name: LPR:23635
-    apportionment: 0.0306
+    apportionment: 0.09757667147001615
   stream_response:
   - LPR:23635
   dd_response: []
@@ -512,7 +512,7 @@ well_23637:
   pumping_days: 120
   stream_apportionment35:
     name: LPR:23637
-    apportionment: 0.0186
+    apportionment: 0.09335780311892701
   stream_response:
   - LPR:23637
   dd_response: []
@@ -526,7 +526,7 @@ well_23638:
   pumping_days: 120
   stream_apportionment36:
     name: LPR:23638
-    apportionment: 0.8466
+    apportionment: 0.579102974674832
   stream_response:
   - LPR:23638
   dd_response: []
@@ -540,7 +540,7 @@ well_23639:
   pumping_days: 120
   stream_apportionment37:
     name: LPR:23639
-    apportionment: 0.3237
+    apportionment: 0.2889476890152496
   stream_response:
   - LPR:23639
   dd_response: []
@@ -554,7 +554,7 @@ well_23645:
   pumping_days: 90
   stream_apportionment38:
     name: LPR:23645
-    apportionment: 0.9442
+    apportionment: 0.7177857041152808
   stream_response:
   - LPR:23645
   dd_response: []
@@ -568,7 +568,7 @@ well_23646:
   pumping_days: 90
   stream_apportionment39:
     name: LPR:23646
-    apportionment: 0.813
+    apportionment: 0.5641522066744296
   stream_response:
   - LPR:23646
   dd_response: []
@@ -582,7 +582,7 @@ well_23648:
   pumping_days: 120
   stream_apportionment40:
     name: LPR:23648
-    apportionment: 0.0292
+    apportionment: 0.09672619163747756
   stream_response:
   - LPR:23648
   dd_response: []
@@ -596,7 +596,7 @@ well_23653:
   pumping_days: 150
   stream_apportionment41:
     name: LPR:23653
-    apportionment: 0.9911
+    apportionment: 0.9134250482917413
   stream_response:
   - LPR:23653
   dd_response: []
@@ -610,7 +610,7 @@ well_23695:
   pumping_days: 90
   stream_apportionment42:
     name: LPR:23695
-    apportionment: 0.1556
+    apportionment: 0.20715064278818093
   stream_response:
   - LPR:23695
   dd_response: []
@@ -624,7 +624,7 @@ well_23697:
   pumping_days: 120
   stream_apportionment43:
     name: LPR:23697
-    apportionment: 0.0204
+    apportionment: 0.09291916702274972
   stream_response:
   - LPR:23697
   dd_response: []
@@ -638,7 +638,7 @@ well_23698:
   pumping_days: 90
   stream_apportionment44:
     name: LPR:23698
-    apportionment: 0.0243
+    apportionment: 0.1023996955701555
   stream_response:
   - LPR:23698
   dd_response: []
@@ -652,7 +652,7 @@ well_23699:
   pumping_days: 90
   stream_apportionment45:
     name: LPR:23699
-    apportionment: 0.0204
+    apportionment: 0.08567879194742534
   stream_response:
   - LPR:23699
   dd_response: []
@@ -666,7 +666,7 @@ well_23700:
   pumping_days: 120
   stream_apportionment46:
     name: LPR:23700
-    apportionment: 0.0356
+    apportionment: 0.10719327421057422
   stream_response:
   - LPR:23700
   dd_response: []
@@ -680,7 +680,7 @@ well_23709:
   pumping_days: 120
   stream_apportionment47:
     name: LPR:23709
-    apportionment: 0.1329
+    apportionment: 0.19922343050237126
   stream_response:
   - LPR:23709
   dd_response: []
@@ -694,7 +694,7 @@ well_23710:
   pumping_days: 120
   stream_apportionment48:
     name: LPR:23710
-    apportionment: 0.0269
+    apportionment: 0.08687500708940199
   stream_response:
   - LPR:23710
   dd_response: []
@@ -708,7 +708,7 @@ well_23715:
   pumping_days: 90
   stream_apportionment49:
     name: LPR:23715
-    apportionment: 0.0859
+    apportionment: 0.1666201516272614
   stream_response:
   - LPR:23715
   dd_response: []
@@ -722,7 +722,7 @@ well_23716:
   pumping_days: 90
   stream_apportionment50:
     name: LPR:23716
-    apportionment: 0.0675
+    apportionment: 0.15214940382175327
   stream_response:
   - LPR:23716
   dd_response: []
@@ -736,7 +736,7 @@ well_23720:
   pumping_days: 120
   stream_apportionment51:
     name: LPR:23720
-    apportionment: 0.2836
+    apportionment: 0.2844607853208551
   stream_response:
   - LPR:23720
   dd_response: []
@@ -750,7 +750,7 @@ well_23721:
   pumping_days: 120
   stream_apportionment52:
     name: LPR:23721
-    apportionment: 0.2777
+    apportionment: 0.26965191746186223
   stream_response:
   - LPR:23721
   dd_response: []
@@ -764,7 +764,7 @@ well_23722:
   pumping_days: 90
   stream_apportionment53:
     name: LPR:23722
-    apportionment: 0.6135
+    apportionment: 0.4305812619870596
   stream_response:
   - LPR:23722
   dd_response: []
@@ -778,7 +778,7 @@ well_23723:
   pumping_days: 150
   stream_apportionment54:
     name: LPR:23723
-    apportionment: 0.0656
+    apportionment: 0.1486083094345086
   stream_response:
   - LPR:23723
   dd_response: []
@@ -792,7 +792,7 @@ well_23726:
   pumping_days: 90
   stream_apportionment55:
     name: LPR:23726
-    apportionment: 0.0897
+    apportionment: 0.16591085455865787
   stream_response:
   - LPR:23726
   dd_response: []
@@ -806,7 +806,7 @@ well_23727:
   pumping_days: 90
   stream_apportionment56:
     name: LPR:23727
-    apportionment: 0.1253
+    apportionment: 0.18907849122300793
   stream_response:
   - LPR:23727
   dd_response: []
@@ -820,7 +820,7 @@ well_23728:
   pumping_days: 120
   stream_apportionment57:
     name: LPR:23728
-    apportionment: 0.072
+    apportionment: 0.14686840234494428
   stream_response:
   - LPR:23728
   dd_response: []
@@ -834,7 +834,7 @@ well_23729:
   pumping_days: 120
   stream_apportionment58:
     name: LPR:23729
-    apportionment: 0.1326
+    apportionment: 0.18629137361604342
   stream_response:
   - LPR:23729
   dd_response: []
@@ -848,7 +848,7 @@ well_23751:
   pumping_days: 90
   stream_apportionment59:
     name: LPR:23751
-    apportionment: 0.0803
+    apportionment: 0.15704828224539708
   stream_response:
   - LPR:23751
   dd_response: []
@@ -862,7 +862,7 @@ well_23752:
   pumping_days: 90
   stream_apportionment60:
     name: LPR:23752
-    apportionment: 0.8536
+    apportionment: 0.5874027758502056
   stream_response:
   - LPR:23752
   dd_response: []
@@ -876,7 +876,7 @@ well_23753:
   pumping_days: 90
   stream_apportionment61:
     name: LPR:23753
-    apportionment: 0.6221
+    apportionment: 0.4328454083246712
   stream_response:
   - LPR:23753
   dd_response: []
@@ -890,7 +890,7 @@ well_23754:
   pumping_days: 90
   stream_apportionment62:
     name: LPR:23754
-    apportionment: 0.0363
+    apportionment: 0.10245546096015722
   stream_response:
   - LPR:23754
   dd_response: []
@@ -904,7 +904,7 @@ well_23755:
   pumping_days: 90
   stream_apportionment63:
     name: LPR:23755
-    apportionment: 0.9815
+    apportionment: 0.8388225704937207
   stream_response:
   - LPR:23755
   dd_response: []
@@ -918,7 +918,7 @@ well_23756:
   pumping_days: 90
   stream_apportionment64:
     name: LPR:23756
-    apportionment: 0.059
+    apportionment: 0.14119925269483036
   stream_response:
   - LPR:23756
   dd_response: []
@@ -932,7 +932,7 @@ well_23757:
   pumping_days: 120
   stream_apportionment65:
     name: LPR:23757
-    apportionment: 0.0209
+    apportionment: 0.09650952476388294
   stream_response:
   - LPR:23757
   dd_response: []
@@ -946,7 +946,7 @@ well_23758:
   pumping_days: 120
   stream_apportionment66:
     name: LPR:23758
-    apportionment: 0.0379
+    apportionment: 0.12084808914387182
   stream_response:
   - LPR:23758
   dd_response: []
@@ -960,7 +960,7 @@ well_23770:
   pumping_days: 120
   stream_apportionment67:
     name: LPR:23770
-    apportionment: 0.9489
+    apportionment: 0.811720148257776
   stream_response:
   - LPR:23770
   dd_response: []
@@ -974,7 +974,7 @@ well_23776:
   pumping_days: 90
   stream_apportionment68:
     name: LPR:23776
-    apportionment: 0.0952
+    apportionment: 0.19920781782623215
   stream_response:
   - LPR:23776
   dd_response: []
@@ -988,7 +988,7 @@ well_23778:
   pumping_days: 120
   stream_apportionment69:
     name: LPR:23778
-    apportionment: 0.1305
+    apportionment: 0.1890955748789921
   stream_response:
   - LPR:23778
   dd_response: []
@@ -1002,7 +1002,7 @@ well_23781:
   pumping_days: 90
   stream_apportionment70:
     name: LPR:23781
-    apportionment: 0.7044
+    apportionment: 0.4857623397653471
   stream_response:
   - LPR:23781
   dd_response: []
@@ -1016,7 +1016,7 @@ well_23790:
   pumping_days: 120
   stream_apportionment71:
     name: LPR:23790
-    apportionment: 0.0156
+    apportionment: 0.08739088448700481
   stream_response:
   - LPR:23790
   dd_response: []
@@ -1030,7 +1030,7 @@ well_23791:
   pumping_days: 120
   stream_apportionment72:
     name: LPR:23791
-    apportionment: 0.0206
+    apportionment: 0.09873737911558104
   stream_response:
   - LPR:23791
   dd_response: []
@@ -1044,7 +1044,7 @@ well_23794:
   pumping_days: 150
   stream_apportionment73:
     name: LPR:23794
-    apportionment: 0.7903
+    apportionment: 0.6600247129789742
   stream_response:
   - LPR:23794
   dd_response: []
@@ -1058,7 +1058,7 @@ well_23795:
   pumping_days: 90
   stream_apportionment74:
     name: LPR:23795
-    apportionment: 0.1361
+    apportionment: 0.19592985457455245
   stream_response:
   - LPR:23795
   dd_response: []
@@ -1072,7 +1072,7 @@ well_23798:
   pumping_days: 90
   stream_apportionment75:
     name: LPR:23798
-    apportionment: 0.3916
+    apportionment: 0.3728686545456626
   stream_response:
   - LPR:23798
   dd_response: []
@@ -1086,7 +1086,7 @@ well_23800:
   pumping_days: 90
   stream_apportionment76:
     name: LPR:23800
-    apportionment: 0.7564
+    apportionment: 0.5057203566091847
   stream_response:
   - LPR:23800
   dd_response: []
@@ -1100,7 +1100,7 @@ well_23807:
   pumping_days: 90
   stream_apportionment77:
     name: LPR:23807
-    apportionment: 0.0561
+    apportionment: 0.12006571172604409
   stream_response:
   - LPR:23807
   dd_response: []
@@ -1114,7 +1114,7 @@ well_23816:
   pumping_days: 150
   stream_apportionment78:
     name: LPR:23816
-    apportionment: 0.9538
+    apportionment: 0.819617405550309
   stream_response:
   - LPR:23816
   dd_response: []
@@ -1128,7 +1128,7 @@ well_23818:
   pumping_days: 90
   stream_apportionment79:
     name: LPR:23818
-    apportionment: 0.015
+    apportionment: 0.07133597680151126
   stream_response:
   - LPR:23818
   dd_response: []
@@ -1142,7 +1142,7 @@ well_23820:
   pumping_days: 120
   stream_apportionment80:
     name: LPR:23820
-    apportionment: 0.0847
+    apportionment: 0.155958368016927
   stream_response:
   - LPR:23820
   dd_response: []
@@ -1156,7 +1156,7 @@ well_23823:
   pumping_days: 120
   stream_apportionment81:
     name: LPR:23823
-    apportionment: 0.0157
+    apportionment: 0.08843238516654439
   stream_response:
   - LPR:23823
   dd_response: []
@@ -1170,7 +1170,7 @@ well_23836:
   pumping_days: 120
   stream_apportionment82:
     name: LPR:23836
-    apportionment: 0.9589
+    apportionment: 0.8284783883752904
   stream_response:
   - LPR:23836
   dd_response: []
@@ -1184,7 +1184,7 @@ well_23837:
   pumping_days: 120
   stream_apportionment83:
     name: LPR:23837
-    apportionment: 0.825
+    apportionment: 0.610957585444408
   stream_response:
   - LPR:23837
   dd_response: []
@@ -1198,7 +1198,7 @@ well_23846:
   pumping_days: 90
   stream_apportionment84:
     name: LPR:23846
-    apportionment: 0.1148
+    apportionment: 0.18896534745573043
   stream_response:
   - LPR:23846
   dd_response: []
@@ -1212,7 +1212,7 @@ well_23847:
   pumping_days: 120
   stream_apportionment85:
     name: LPR:23847
-    apportionment: 0.578
+    apportionment: 0.4143187332464422
   stream_response:
   - LPR:23847
   dd_response: []
@@ -1226,7 +1226,7 @@ well_23848:
   pumping_days: 90
   stream_apportionment86:
     name: LPR:23848
-    apportionment: 0.5052
+    apportionment: 0.3776145647064231
   stream_response:
   - LPR:23848
   dd_response: []
@@ -1240,7 +1240,7 @@ well_23851:
   pumping_days: 150
   stream_apportionment87:
     name: LPR:23851
-    apportionment: 0.6419
+    apportionment: 0.4071230094357252
   stream_response:
   - LPR:23851
   dd_response: []
@@ -1254,7 +1254,7 @@ well_23864:
   pumping_days: 90
   stream_apportionment88:
     name: LPR:23864
-    apportionment: 0.1723
+    apportionment: 0.19013874928436547
   stream_response:
   - LPR:23864
   dd_response: []
@@ -1268,7 +1268,7 @@ well_23865:
   pumping_days: 150
   stream_apportionment89:
     name: LPR:23865
-    apportionment: 0.1432
+    apportionment: 0.22423825506054482
   stream_response:
   - LPR:23865
   dd_response: []
@@ -1282,7 +1282,7 @@ well_23866:
   pumping_days: 120
   stream_apportionment90:
     name: LPR:23866
-    apportionment: 0.0839
+    apportionment: 0.13834072818053458
   stream_response:
   - LPR:23866
   dd_response: []
@@ -1296,7 +1296,7 @@ well_23867:
   pumping_days: 90
   stream_apportionment91:
     name: LPR:23867
-    apportionment: 0.0173
+    apportionment: 0.08455432386401546
   stream_response:
   - LPR:23867
   dd_response: []
@@ -1310,7 +1310,7 @@ well_23868:
   pumping_days: 90
   stream_apportionment92:
     name: LPR:23868
-    apportionment: 0.0096
+    apportionment: 0.0696842271709435
   stream_response:
   - LPR:23868
   dd_response: []
@@ -1324,7 +1324,7 @@ well_23869:
   pumping_days: 90
   stream_apportionment93:
     name: LPR:23869
-    apportionment: 0.0275
+    apportionment: 0.10003045876406846
   stream_response:
   - LPR:23869
   dd_response: []
@@ -1338,7 +1338,7 @@ well_23870:
   pumping_days: 90
   stream_apportionment94:
     name: LPR:23870
-    apportionment: 0.0281
+    apportionment: 0.10182886586468223
   stream_response:
   - LPR:23870
   dd_response: []
@@ -1352,7 +1352,7 @@ well_23876:
   pumping_days: 150
   stream_apportionment95:
     name: LPR:23876
-    apportionment: 0.957
+    apportionment: 0.825104553746541
   stream_response:
   - LPR:23876
   dd_response: []
@@ -1366,7 +1366,7 @@ well_23881:
   pumping_days: 120
   stream_apportionment96:
     name: LPR:23881
-    apportionment: 0.4588
+    apportionment: 0.47938902362686053
   stream_response:
   - LPR:23881
   dd_response: []
@@ -1380,7 +1380,7 @@ well_23883:
   pumping_days: 120
   stream_apportionment97:
     name: LPR:23883
-    apportionment: 0.0369
+    apportionment: 0.11432802770398136
   stream_response:
   - LPR:23883
   dd_response: []
@@ -1394,7 +1394,7 @@ well_23886:
   pumping_days: 120
   stream_apportionment98:
     name: LPR:23886
-    apportionment: 0.0444
+    apportionment: 0.11454818779937871
   stream_response:
   - LPR:23886
   dd_response: []
@@ -1408,7 +1408,7 @@ well_23888:
   pumping_days: 90
   stream_apportionment99:
     name: LPR:23888
-    apportionment: 0.7608
+    apportionment: 0.5584187119553059
   stream_response:
   - LPR:23888
   dd_response: []
@@ -1422,7 +1422,7 @@ well_23889:
   pumping_days: 90
   stream_apportionment100:
     name: LPR:23889
-    apportionment: 0.7371
+    apportionment: 0.5430119756954671
   stream_response:
   - LPR:23889
   dd_response: []
@@ -1436,7 +1436,7 @@ well_23890:
   pumping_days: 90
   stream_apportionment101:
     name: LPR:23890
-    apportionment: 0.0542
+    apportionment: 0.13192222162885012
   stream_response:
   - LPR:23890
   dd_response: []
@@ -1450,7 +1450,7 @@ well_23895:
   pumping_days: 120
   stream_apportionment102:
     name: LPR:23895
-    apportionment: 0.1401
+    apportionment: 0.19311723469630013
   stream_response:
   - LPR:23895
   dd_response: []
@@ -1464,7 +1464,7 @@ well_23898:
   pumping_days: 90
   stream_apportionment103:
     name: LPR:23898
-    apportionment: 0.0116
+    apportionment: 0.07723000730017042
   stream_response:
   - LPR:23898
   dd_response: []
@@ -1478,7 +1478,7 @@ well_23908:
   pumping_days: 120
   stream_apportionment104:
     name: LPR:23908
-    apportionment: 0.3927
+    apportionment: 0.3294166293057047
   stream_response:
   - LPR:23908
   dd_response: []
@@ -1492,7 +1492,7 @@ well_23909:
   pumping_days: 120
   stream_apportionment105:
     name: LPR:23909
-    apportionment: 0.5584
+    apportionment: 0.44644353223706357
   stream_response:
   - LPR:23909
   dd_response: []
@@ -1506,7 +1506,7 @@ well_23910:
   pumping_days: 120
   stream_apportionment106:
     name: LPR:23910
-    apportionment: 0.0159
+    apportionment: 0.08623090887875966
   stream_response:
   - LPR:23910
   dd_response: []
@@ -1520,7 +1520,7 @@ well_23913:
   pumping_days: 90
   stream_apportionment107:
     name: LPR:23913
-    apportionment: 0.0061
+    apportionment: 0.06045214284170639
   stream_response:
   - LPR:23913
   dd_response: []
@@ -1534,7 +1534,7 @@ well_23915:
   pumping_days: 60
   stream_apportionment108:
     name: LPR:23915
-    apportionment: 0.0222
+    apportionment: 0.09621022056431003
   stream_response:
   - LPR:23915
   dd_response: []
@@ -1548,7 +1548,7 @@ well_23919:
   pumping_days: 60
   stream_apportionment109:
     name: LPR:23919
-    apportionment: 0.8116
+    apportionment: 0.6748674799295845
   stream_response:
   - LPR:23919
   dd_response: []
@@ -1562,7 +1562,7 @@ well_23926:
   pumping_days: 120
   stream_apportionment110:
     name: LPR:23926
-    apportionment: 0.0452
+    apportionment: 0.12789512611634313
   stream_response:
   - LPR:23926
   dd_response: []
@@ -1576,7 +1576,7 @@ well_23928:
   pumping_days: 120
   stream_apportionment111:
     name: LPR:23928
-    apportionment: 0.4229
+    apportionment: 0.3773183992563153
   stream_response:
   - LPR:23928
   dd_response: []
@@ -1590,7 +1590,7 @@ well_23929:
   pumping_days: 60
   stream_apportionment112:
     name: LPR:23929
-    apportionment: 0.8968
+    apportionment: 0.7466857020511527
   stream_response:
   - LPR:23929
   dd_response: []
@@ -1604,7 +1604,7 @@ well_23930:
   pumping_days: 90
   stream_apportionment113:
     name: LPR:23930
-    apportionment: 0.5494
+    apportionment: 0.4483379660119628
   stream_response:
   - LPR:23930
   dd_response: []
@@ -1618,7 +1618,7 @@ well_23934:
   pumping_days: 120
   stream_apportionment114:
     name: LPR:23934
-    apportionment: 0.9928
+    apportionment: 0.8984316109439998
   stream_response:
   - LPR:23934
   dd_response: []
@@ -1632,7 +1632,7 @@ well_23936:
   pumping_days: 120
   stream_apportionment115:
     name: LPR:23936
-    apportionment: 0.7501
+    apportionment: 0.5096480170479567
   stream_response:
   - LPR:23936
   dd_response: []
@@ -1646,7 +1646,7 @@ well_23937:
   pumping_days: 120
   stream_apportionment116:
     name: LPR:23937
-    apportionment: 0.5287
+    apportionment: 0.38918386314640474
   stream_response:
   - LPR:23937
   dd_response: []
@@ -1660,7 +1660,7 @@ well_23939:
   pumping_days: 150
   stream_apportionment117:
     name: LPR:23939
-    apportionment: 0.8864
+    apportionment: 0.6647612900856319
   stream_response:
   - LPR:23939
   dd_response: []
@@ -1674,7 +1674,7 @@ well_23942:
   pumping_days: 60
   stream_apportionment118:
     name: LPR:23942
-    apportionment: 0.0444
+    apportionment: 0.12264151565093519
   stream_response:
   - LPR:23942
   dd_response: []
@@ -1688,7 +1688,7 @@ well_23944:
   pumping_days: 90
   stream_apportionment119:
     name: LPR:23944
-    apportionment: 0.0958
+    apportionment: 0.20012786341311245
   stream_response:
   - LPR:23944
   dd_response: []
@@ -1702,7 +1702,7 @@ well_23948:
   pumping_days: 150
   stream_apportionment120:
     name: LPR:23948
-    apportionment: 0.341
+    apportionment: 0.3449521050397785
   stream_response:
   - LPR:23948
   dd_response: []
@@ -1716,7 +1716,7 @@ well_23956:
   pumping_days: 90
   stream_apportionment121:
     name: LPR:23956
-    apportionment: 0.2138
+    apportionment: 0.2694892777151081
   stream_response:
   - LPR:23956
   dd_response: []
@@ -1730,7 +1730,7 @@ well_23961:
   pumping_days: 90
   stream_apportionment122:
     name: LPR:23961
-    apportionment: 0.0028
+    apportionment: 0.037115808538281725
   stream_response:
   - LPR:23961
   dd_response: []
@@ -1744,7 +1744,7 @@ well_23962:
   pumping_days: 90
   stream_apportionment123:
     name: LPR:23962
-    apportionment: 0.1476
+    apportionment: 0.1746468833352387
   stream_response:
   - LPR:23962
   dd_response: []
@@ -1758,7 +1758,7 @@ well_23963:
   pumping_days: 90
   stream_apportionment124:
     name: LPR:23963
-    apportionment: 0.0488
+    apportionment: 0.11028332367121714
   stream_response:
   - LPR:23963
   dd_response: []
@@ -1772,7 +1772,7 @@ well_23966:
   pumping_days: 120
   stream_apportionment125:
     name: LPR:23966
-    apportionment: 0.0381
+    apportionment: 0.09907938333028425
   stream_response:
   - LPR:23966
   dd_response: []
@@ -1786,7 +1786,7 @@ well_23967:
   pumping_days: 60
   stream_apportionment126:
     name: LPR:23967
-    apportionment: 0.3685
+    apportionment: 0.3544895850271867
   stream_response:
   - LPR:23967
   dd_response: []
@@ -1800,7 +1800,7 @@ well_23972:
   pumping_days: 120
   stream_apportionment127:
     name: LPR:23972
-    apportionment: 0.0426
+    apportionment: 0.12036354410281776
   stream_response:
   - LPR:23972
   dd_response: []
@@ -1814,7 +1814,7 @@ well_23977:
   pumping_days: 90
   stream_apportionment128:
     name: LPR:23977
-    apportionment: 0.5259
+    apportionment: 0.42883030829460045
   stream_response:
   - LPR:23977
   dd_response: []
@@ -1828,7 +1828,7 @@ well_23978:
   pumping_days: 90
   stream_apportionment129:
     name: LPR:23978
-    apportionment: 0.0295
+    apportionment: 0.09467377564926883
   stream_response:
   - LPR:23978
   dd_response: []
@@ -1842,7 +1842,7 @@ well_23979:
   pumping_days: 90
   stream_apportionment130:
     name: LPR:23979
-    apportionment: 0.0363
+    apportionment: 0.1105489268001983
   stream_response:
   - LPR:23979
   dd_response: []
@@ -1856,7 +1856,7 @@ well_23980:
   pumping_days: 120
   stream_apportionment131:
     name: LPR:23980
-    apportionment: 0.0556
+    apportionment: 0.11430163290037099
   stream_response:
   - LPR:23980
   dd_response: []
@@ -1870,7 +1870,7 @@ well_23981:
   pumping_days: 120
   stream_apportionment132:
     name: LPR:23981
-    apportionment: 0.7511
+    apportionment: 0.5610538364029308
   stream_response:
   - LPR:23981
   dd_response: []
@@ -1884,7 +1884,7 @@ well_23983:
   pumping_days: 120
   stream_apportionment133:
     name: LPR:23983
-    apportionment: 0.1076
+    apportionment: 0.17894035176093076
   stream_response:
   - LPR:23983
   dd_response: []
@@ -1898,7 +1898,7 @@ well_23984:
   pumping_days: 120
   stream_apportionment134:
     name: LPR:23984
-    apportionment: 0.2378
+    apportionment: 0.2832419406943316
   stream_response:
   - LPR:23984
   dd_response: []
@@ -1912,7 +1912,7 @@ well_23985:
   pumping_days: 120
   stream_apportionment135:
     name: LPR:23985
-    apportionment: 0.5827
+    apportionment: 0.47178792019499133
   stream_response:
   - LPR:23985
   dd_response: []
@@ -1926,7 +1926,7 @@ well_23987:
   pumping_days: 90
   stream_apportionment136:
     name: LPR:23987
-    apportionment: 0.1299
+    apportionment: 0.17763280085242333
   stream_response:
   - LPR:23987
   dd_response: []
@@ -1940,7 +1940,7 @@ well_23998:
   pumping_days: 120
   stream_apportionment137:
     name: LPR:23998
-    apportionment: 0.0111
+    apportionment: 0.07076732574934504
   stream_response:
   - LPR:23998
   dd_response: []
@@ -1954,7 +1954,7 @@ well_24003:
   pumping_days: 180
   stream_apportionment138:
     name: LPR:24003
-    apportionment: 0.1987
+    apportionment: 0.2261058123835492
   stream_response:
   - LPR:24003
   dd_response: []
@@ -1968,7 +1968,7 @@ well_24005:
   pumping_days: 150
   stream_apportionment139:
     name: LPR:24005
-    apportionment: 0.3195
+    apportionment: 0.3265534226731727
   stream_response:
   - LPR:24005
   dd_response: []
@@ -1982,7 +1982,7 @@ well_24010:
   pumping_days: 150
   stream_apportionment140:
     name: LPR:24010
-    apportionment: 0.8453
+    apportionment: 0.7003773628386416
   stream_response:
   - LPR:24010
   dd_response: []
@@ -1996,7 +1996,7 @@ well_24011:
   pumping_days: 90
   stream_apportionment141:
     name: LPR:24011
-    apportionment: 0.8339
+    apportionment: 0.6133410931701901
   stream_response:
   - LPR:24011
   dd_response: []
@@ -2010,7 +2010,7 @@ well_24012:
   pumping_days: 120
   stream_apportionment142:
     name: LPR:24012
-    apportionment: 0.063
+    apportionment: 0.13671212999675517
   stream_response:
   - LPR:24012
   dd_response: []
@@ -2024,7 +2024,7 @@ well_24016:
   pumping_days: 120
   stream_apportionment143:
     name: LPR:24016
-    apportionment: 0.0047
+    apportionment: 0.05487736550509943
   stream_response:
   - LPR:24016
   dd_response: []
@@ -2038,7 +2038,7 @@ well_24024:
   pumping_days: 90
   stream_apportionment144:
     name: LPR:24024
-    apportionment: 0.0316
+    apportionment: 0.09127285127089671
   stream_response:
   - LPR:24024
   dd_response: []
@@ -2052,7 +2052,7 @@ well_24030:
   pumping_days: 90
   stream_apportionment145:
     name: LPR:24030
-    apportionment: 0.1427
+    apportionment: 0.17683464477786626
   stream_response:
   - LPR:24030
   dd_response: []
@@ -2066,7 +2066,7 @@ well_24033:
   pumping_days: 120
   stream_apportionment146:
     name: LPR:24033
-    apportionment: 0.0652
+    apportionment: 0.13676174484981005
   stream_response:
   - LPR:24033
   dd_response: []
@@ -2080,7 +2080,7 @@ well_24036:
   pumping_days: 120
   stream_apportionment147:
     name: LPR:24036
-    apportionment: 0.0389
+    apportionment: 0.09937197356831151
   stream_response:
   - LPR:24036
   dd_response: []
@@ -2094,7 +2094,7 @@ well_24037:
   pumping_days: 60
   stream_apportionment148:
     name: LPR:24037
-    apportionment: 0.0936
+    apportionment: 0.16056249206714995
   stream_response:
   - LPR:24037
   dd_response: []
@@ -2108,7 +2108,7 @@ well_24042:
   pumping_days: 90
   stream_apportionment149:
     name: LPR:24042
-    apportionment: 0.1086
+    apportionment: 0.151042310698692
   stream_response:
   - LPR:24042
   dd_response: []
@@ -2122,7 +2122,7 @@ well_24043:
   pumping_days: 120
   stream_apportionment150:
     name: LPR:24043
-    apportionment: 0.0133
+    apportionment: 0.0683705970652107
   stream_response:
   - LPR:24043
   dd_response: []
@@ -2136,7 +2136,7 @@ well_24045:
   pumping_days: 150
   stream_apportionment151:
     name: LPR:24045
-    apportionment: 0.6563
+    apportionment: 0.4187365530877306
   stream_response:
   - LPR:24045
   dd_response: []
@@ -2150,7 +2150,7 @@ well_24047:
   pumping_days: 90
   stream_apportionment152:
     name: LPR:24047
-    apportionment: 0.3794
+    apportionment: 0.3581415934857616
   stream_response:
   - LPR:24047
   dd_response: []
@@ -2164,7 +2164,7 @@ well_24049:
   pumping_days: 90
   stream_apportionment153:
     name: LPR:24049
-    apportionment: 0.4496
+    apportionment: 0.31704478872699515
   stream_response:
   - LPR:24049
   dd_response: []
@@ -2178,7 +2178,7 @@ well_24059:
   pumping_days: 90
   stream_apportionment154:
     name: LPR:24059
-    apportionment: 0.1678
+    apportionment: 0.24871023606496742
   stream_response:
   - LPR:24059
   dd_response: []
@@ -2192,7 +2192,7 @@ well_24063:
   pumping_days: 90
   stream_apportionment155:
     name: LPR:24063
-    apportionment: 0.2636
+    apportionment: 0.30128390821527967
   stream_response:
   - LPR:24063
   dd_response: []
@@ -2206,7 +2206,7 @@ well_24066:
   pumping_days: 120
   stream_apportionment156:
     name: LPR:24066
-    apportionment: 0.0174
+    apportionment: 0.0877625976213058
   stream_response:
   - LPR:24066
   dd_response: []
@@ -2220,7 +2220,7 @@ well_24080:
   pumping_days: 90
   stream_apportionment157:
     name: LPR:24080
-    apportionment: 0.0252
+    apportionment: 0.10500769498426941
   stream_response:
   - LPR:24080
   dd_response: []
@@ -2234,7 +2234,7 @@ well_24091:
   pumping_days: 90
   stream_apportionment158:
     name: LPR:24091
-    apportionment: 0.1841
+    apportionment: 0.22096358680336212
   stream_response:
   - LPR:24091
   dd_response: []
@@ -2248,7 +2248,7 @@ well_24093:
   pumping_days: 90
   stream_apportionment159:
     name: LPR:24093
-    apportionment: 0.3927
+    apportionment: 0.3299690858881283
   stream_response:
   - LPR:24093
   dd_response: []
@@ -2262,7 +2262,7 @@ well_24110:
   pumping_days: 90
   stream_apportionment160:
     name: LPR:24110
-    apportionment: 0.2756
+    apportionment: 0.27603851161050436
   stream_response:
   - LPR:24110
   dd_response: []
@@ -2276,7 +2276,7 @@ well_24120:
   pumping_days: 60
   stream_apportionment161:
     name: LPR:24120
-    apportionment: 0.0277
+    apportionment: 0.12331237257231226
   stream_response:
   - LPR:24120
   dd_response: []
@@ -2290,7 +2290,7 @@ well_24121:
   pumping_days: 90
   stream_apportionment162:
     name: LPR:24121
-    apportionment: 0.3061
+    apportionment: 0.2942523340897722
   stream_response:
   - LPR:24121
   dd_response: []
@@ -2304,7 +2304,7 @@ well_24125:
   pumping_days: 120
   stream_apportionment163:
     name: LPR:24125
-    apportionment: 0.6212
+    apportionment: 0.4834067480475898
   stream_response:
   - LPR:24125
   dd_response: []
@@ -2318,7 +2318,7 @@ well_24130:
   pumping_days: 90
   stream_apportionment164:
     name: LPR:24130
-    apportionment: 0.05
+    apportionment: 0.13110056927579206
   stream_response:
   - LPR:24130
   dd_response: []
@@ -2332,7 +2332,7 @@ well_24135:
   pumping_days: 150
   stream_apportionment165:
     name: LPR:24135
-    apportionment: 0.0047
+    apportionment: 0.0642481499656417
   stream_response:
   - LPR:24135
   dd_response: []
@@ -2346,7 +2346,7 @@ well_24137:
   pumping_days: 120
   stream_apportionment166:
     name: LPR:24137
-    apportionment: 0.6799
+    apportionment: 0.5930915726281696
   stream_response:
   - LPR:24137
   dd_response: []
@@ -2360,7 +2360,7 @@ well_24165:
   pumping_days: 150
   stream_apportionment167:
     name: LPR:24165
-    apportionment: 0.1591
+    apportionment: 0.20523117413692896
   stream_response:
   - LPR:24165
   dd_response: []
@@ -2374,7 +2374,7 @@ well_24166:
   pumping_days: 120
   stream_apportionment168:
     name: LPR:24166
-    apportionment: 0.125
+    apportionment: 0.18655233962437115
   stream_response:
   - LPR:24166
   dd_response: []
@@ -2388,7 +2388,7 @@ well_24169:
   pumping_days: 90
   stream_apportionment169:
     name: LPR:24169
-    apportionment: 0.0394
+    apportionment: 0.11061269286066149
   stream_response:
   - LPR:24169
   dd_response: []
@@ -2402,7 +2402,7 @@ well_24172:
   pumping_days: 90
   stream_apportionment170:
     name: LPR:24172
-    apportionment: 0.3301
+    apportionment: 0.3532411938848773
   stream_response:
   - LPR:24172
   dd_response: []
@@ -2416,7 +2416,7 @@ well_24195:
   pumping_days: 30
   stream_apportionment171:
     name: LPR:24195
-    apportionment: 0.1631
+    apportionment: 0.2065189428395653
   stream_response:
   - LPR:24195
   dd_response: []
@@ -2430,7 +2430,7 @@ well_24197:
   pumping_days: 90
   stream_apportionment172:
     name: LPR:24197
-    apportionment: 0.8237
+    apportionment: 0.6096003615836257
   stream_response:
   - LPR:24197
   dd_response: []
@@ -2444,7 +2444,7 @@ well_24203:
   pumping_days: 120
   stream_apportionment173:
     name: LPR:24203
-    apportionment: 0.8453
+    apportionment: 0.7003773628386416
   stream_response:
   - LPR:24203
   dd_response: []
@@ -2458,7 +2458,7 @@ well_24216:
   pumping_days: 90
   stream_apportionment174:
     name: LPR:24216
-    apportionment: 0.0128
+    apportionment: 0.07489175153947561
   stream_response:
   - LPR:24216
   dd_response: []
@@ -2472,7 +2472,7 @@ well_24225:
   pumping_days: 120
   stream_apportionment175:
     name: LPR:24225
-    apportionment: 0.3787
+    apportionment: 0.3121849787248363
   stream_response:
   - LPR:24225
   dd_response: []
@@ -2486,7 +2486,7 @@ well_24226:
   pumping_days: 60
   stream_apportionment176:
     name: LPR:24226
-    apportionment: 0.5021
+    apportionment: 0.5010368351424088
   stream_response:
   - LPR:24226
   dd_response: []
@@ -2500,7 +2500,7 @@ well_24227:
   pumping_days: 120
   stream_apportionment177:
     name: LPR:24227
-    apportionment: 0.3443
+    apportionment: 0.3540691585372233
   stream_response:
   - LPR:24227
   dd_response: []
@@ -2514,7 +2514,7 @@ well_24239:
   pumping_days: 120
   stream_apportionment178:
     name: LPR:24239
-    apportionment: 0.9724
+    apportionment: 0.8557547248208646
   stream_response:
   - LPR:24239
   dd_response: []
@@ -2528,7 +2528,7 @@ well_24240:
   pumping_days: 180
   stream_apportionment179:
     name: LPR:24240
-    apportionment: 0.2572
+    apportionment: 0.3003238817520039
   stream_response:
   - LPR:24240
   dd_response: []
@@ -2542,7 +2542,7 @@ well_24247:
   pumping_days: 90
   stream_apportionment180:
     name: LPR:24247
-    apportionment: 0.071
+    apportionment: 0.17870046429806577
   stream_response:
   - LPR:24247
   dd_response: []
@@ -2556,7 +2556,7 @@ well_24249:
   pumping_days: 90
   stream_apportionment181:
     name: LPR:24249
-    apportionment: 0.1061
+    apportionment: 0.14831212881505096
   stream_response:
   - LPR:24249
   dd_response: []
@@ -2570,7 +2570,7 @@ well_24252:
   pumping_days: 120
   stream_apportionment182:
     name: LPR:24252
-    apportionment: 0.1067
+    apportionment: 0.17753495436638206
   stream_response:
   - LPR:24252
   dd_response: []
@@ -2584,7 +2584,7 @@ well_24253:
   pumping_days: 60
   stream_apportionment183:
     name: LPR:24253
-    apportionment: 0.0866
+    apportionment: 0.13557894197370055
   stream_response:
   - LPR:24253
   dd_response: []
@@ -2598,7 +2598,7 @@ well_24256:
   pumping_days: 120
   stream_apportionment184:
     name: LPR:24256
-    apportionment: 0.1136
+    apportionment: 0.18083613094913245
   stream_response:
   - LPR:24256
   dd_response: []
@@ -2612,7 +2612,7 @@ well_24265:
   pumping_days: 90
   stream_apportionment185:
     name: LPR:24265
-    apportionment: 0.4425
+    apportionment: 0.3547610309295112
   stream_response:
   - LPR:24265
   dd_response: []
@@ -2626,7 +2626,7 @@ well_24266:
   pumping_days: 120
   stream_apportionment186:
     name: LPR:24266
-    apportionment: 0.2558
+    apportionment: 0.2531725345492554
   stream_response:
   - LPR:24266
   dd_response: []
@@ -2640,7 +2640,7 @@ well_24274:
   pumping_days: 90
   stream_apportionment187:
     name: LPR:24274
-    apportionment: 0.9315
+    apportionment: 0.7262976131228492
   stream_response:
   - LPR:24274
   dd_response: []
@@ -2654,7 +2654,7 @@ well_24279:
   pumping_days: 90
   stream_apportionment188:
     name: LPR:24279
-    apportionment: 0.2597
+    apportionment: 0.29521875033417255
   stream_response:
   - LPR:24279
   dd_response: []
@@ -2668,7 +2668,7 @@ well_24283:
   pumping_days: 150
   stream_apportionment189:
     name: LPR:24283
-    apportionment: 0.0592
+    apportionment: 0.2005919235486405
   stream_response:
   - LPR:24283
   dd_response: []
@@ -2682,7 +2682,7 @@ well_24285:
   pumping_days: 120
   stream_apportionment190:
     name: LPR:24285
-    apportionment: 0.0234
+    apportionment: 0.08704855194577452
   stream_response:
   - LPR:24285
   dd_response: []
@@ -2696,7 +2696,7 @@ well_24286:
   pumping_days: 90
   stream_apportionment191:
     name: LPR:24286
-    apportionment: 0.0251
+    apportionment: 0.08976531800482536
   stream_response:
   - LPR:24286
   dd_response: []
@@ -2710,7 +2710,7 @@ well_24291:
   pumping_days: 120
   stream_apportionment192:
     name: LPR:24291
-    apportionment: 0.5964
+    apportionment: 0.4674653748675583
   stream_response:
   - LPR:24291
   dd_response: []
@@ -2724,7 +2724,7 @@ well_24293:
   pumping_days: 90
   stream_apportionment193:
     name: LPR:24293
-    apportionment: 0.3144
+    apportionment: 0.26133432370060117
   stream_response:
   - LPR:24293
   dd_response: []
@@ -2738,7 +2738,7 @@ well_24294:
   pumping_days: 120
   stream_apportionment194:
     name: LPR:24294
-    apportionment: 0.0313
+    apportionment: 0.0975186847511517
   stream_response:
   - LPR:24294
   dd_response: []
@@ -2752,7 +2752,7 @@ well_24302:
   pumping_days: 60
   stream_apportionment195:
     name: LPR:24302
-    apportionment: 0.0319
+    apportionment: 0.09940570537971602
   stream_response:
   - LPR:24302
   dd_response: []
@@ -2766,7 +2766,7 @@ well_24305:
   pumping_days: 60
   stream_apportionment196:
     name: LPR:24305
-    apportionment: 0.0173
+    apportionment: 0.08372458899237875
   stream_response:
   - LPR:24305
   dd_response: []
@@ -2780,7 +2780,7 @@ well_24307:
   pumping_days: 90
   stream_apportionment197:
     name: LPR:24307
-    apportionment: 0.2683
+    apportionment: 0.23563329142853087
   stream_response:
   - LPR:24307
   dd_response: []
@@ -2794,7 +2794,7 @@ well_24311:
   pumping_days: 90
   stream_apportionment198:
     name: LPR:24311
-    apportionment: 0.2455
+    apportionment: 0.2882448684342382
   stream_response:
   - LPR:24311
   dd_response: []
@@ -2808,7 +2808,7 @@ well_24317:
   pumping_days: 150
   stream_apportionment199:
     name: LPR:24317
-    apportionment: 0.0131
+    apportionment: 0.10314642830673641
   stream_response:
   - LPR:24317
   dd_response: []
@@ -2822,7 +2822,7 @@ well_24323:
   pumping_days: 90
   stream_apportionment200:
     name: LPR:24323
-    apportionment: 0.9843
+    apportionment: 0.8878401729384515
   stream_response:
   - LPR:24323
   dd_response: []
@@ -2836,7 +2836,7 @@ well_58403:
   pumping_days: 240
   stream_apportionment201:
     name: LPR:58403
-    apportionment: 0.3183
+    apportionment: 0.2839142897018998
   stream_response:
   - LPR:58403
   dd_response: []
@@ -2850,7 +2850,7 @@ well_58405:
   pumping_days: 365
   stream_apportionment202:
     name: LPR:58405
-    apportionment: 0.788
+    apportionment: 0.658486081991497
   stream_response:
   - LPR:58405
   dd_response: []
@@ -2864,7 +2864,7 @@ well_58406:
   pumping_days: 365
   stream_apportionment203:
     name: LPR:58406
-    apportionment: 0.0123
+    apportionment: 0.08522539776605756
   stream_response:
   - LPR:58406
   dd_response: []
@@ -2878,7 +2878,7 @@ well_58407:
   pumping_days: 365
   stream_apportionment204:
     name: LPR:58407
-    apportionment: 0.0233
+    apportionment: 0.10742682716306066
   stream_response:
   - LPR:58407
   dd_response: []
@@ -2892,7 +2892,7 @@ well_58410:
   pumping_days: 240
   stream_apportionment205:
     name: LPR:58410
-    apportionment: 0.307
+    apportionment: 0.3237874621221441
   stream_response:
   - LPR:58410
   dd_response: []
@@ -2906,7 +2906,7 @@ well_58411:
   pumping_days: 210
   stream_apportionment206:
     name: LPR:58411
-    apportionment: 0.1807
+    apportionment: 0.1937082942094699
   stream_response:
   - LPR:58411
   dd_response: []
@@ -2920,7 +2920,7 @@ well_58414:
   pumping_days: 150
   stream_apportionment207:
     name: LPR:58414
-    apportionment: 0.3258
+    apportionment: 0.2871277453013503
   stream_response:
   - LPR:58414
   dd_response: []
@@ -2934,7 +2934,7 @@ well_58416:
   pumping_days: 300
   stream_apportionment208:
     name: LPR:58416
-    apportionment: 0.3245
+    apportionment: 0.28681124426020244
   stream_response:
   - LPR:58416
   dd_response: []
@@ -2948,7 +2948,7 @@ well_58424:
   pumping_days: 210
   stream_apportionment209:
     name: LPR:58424
-    apportionment: 0.0845
+    apportionment: 0.13664384636765306
   stream_response:
   - LPR:58424
   dd_response: []
@@ -2962,7 +2962,7 @@ well_58433:
   pumping_days: 270
   stream_apportionment210:
     name: LPR:58433
-    apportionment: 0.2825
+    apportionment: 0.31458741762227044
   stream_response:
   - LPR:58433
   dd_response: []
@@ -2976,7 +2976,7 @@ well_58434:
   pumping_days: 60
   stream_apportionment211:
     name: LPR:58434
-    apportionment: 0.1165
+    apportionment: 0.21110288539605426
   stream_response:
   - LPR:58434
   dd_response: []
@@ -2990,7 +2990,7 @@ well_67673:
   pumping_days: 120
   stream_apportionment212:
     name: LPR:67673
-    apportionment: 0.1139
+    apportionment: 0.21348305718450555
   stream_response:
   - LPR:67673
   dd_response: []
@@ -3004,7 +3004,7 @@ well_67895:
   pumping_days: 60
   stream_apportionment213:
     name: LPR:67895
-    apportionment: 0.0244
+    apportionment: 0.0879169912503195
   stream_response:
   - LPR:67895
   dd_response: []
@@ -3018,7 +3018,7 @@ well_68008:
   pumping_days: 365
   stream_apportionment214:
     name: LPR:68008
-    apportionment: 0.6427
+    apportionment: 0.5728424235909771
   stream_response:
   - LPR:68008
   dd_response: []
@@ -3032,7 +3032,7 @@ well_68216:
   pumping_days: 180
   stream_apportionment215:
     name: LPR:68216
-    apportionment: 0.0386
+    apportionment: 0.1264519341177099
   stream_response:
   - LPR:68216
   dd_response: []
@@ -3046,7 +3046,7 @@ well_68218:
   pumping_days: 180
   stream_apportionment216:
     name: LPR:68218
-    apportionment: 0.0273
+    apportionment: 0.10920135239891753
   stream_response:
   - LPR:68218
   dd_response: []
@@ -3060,7 +3060,7 @@ well_68219:
   pumping_days: 240
   stream_apportionment217:
     name: LPR:68219
-    apportionment: 0.0366
+    apportionment: 0.12345398793673903
   stream_response:
   - LPR:68219
   dd_response: []
@@ -3074,7 +3074,7 @@ well_68220:
   pumping_days: 180
   stream_apportionment218:
     name: LPR:68220
-    apportionment: 0.0351
+    apportionment: 0.12018093481706961
   stream_response:
   - LPR:68220
   dd_response: []
@@ -3088,7 +3088,7 @@ well_68221:
   pumping_days: 180
   stream_apportionment219:
     name: LPR:68221
-    apportionment: 0.044
+    apportionment: 0.1341575414141859
   stream_response:
   - LPR:68221
   dd_response: []
@@ -3102,7 +3102,7 @@ well_68294:
   pumping_days: 90
   stream_apportionment220:
     name: LPR:68294
-    apportionment: 0.0009
+    apportionment: 0.02512703238257453
   stream_response:
   - LPR:68294
   dd_response: []
@@ -3116,7 +3116,7 @@ well_68475:
   pumping_days: 240
   stream_apportionment221:
     name: LPR:68475
-    apportionment: 0.3131
+    apportionment: 0.33064924652563626
   stream_response:
   - LPR:68475
   dd_response: []
@@ -3130,7 +3130,7 @@ well_68529:
   pumping_days: 120
   stream_apportionment222:
     name: LPR:68529
-    apportionment: 0.9959
+    apportionment: 0.9398048970962632
   stream_response:
   - LPR:68529
   dd_response: []
@@ -3144,7 +3144,7 @@ well_68693:
   pumping_days: 365
   stream_apportionment223:
     name: LPR:68693
-    apportionment: 0.0525
+    apportionment: 0.11211087300459599
   stream_response:
   - LPR:68693
   dd_response: []
@@ -3158,7 +3158,7 @@ well_68695:
   pumping_days: 90
   stream_apportionment224:
     name: LPR:68695
-    apportionment: 0.0594
+    apportionment: 0.11358830565914244
   stream_response:
   - LPR:68695
   dd_response: []
@@ -3172,7 +3172,7 @@ well_68872:
   pumping_days: 365
   stream_apportionment225:
     name: LPR:68872
-    apportionment: 0.2237
+    apportionment: 0.23790692800552943
   stream_response:
   - LPR:68872
   dd_response: []
@@ -3186,7 +3186,7 @@ well_68917:
   pumping_days: 90
   stream_apportionment226:
     name: LPR:68917
-    apportionment: 0.0615
+    apportionment: 0.16313725210646912
   stream_response:
   - LPR:68917
   dd_response: []
@@ -3200,7 +3200,7 @@ well_68925:
   pumping_days: 365
   stream_apportionment227:
     name: LPR:68925
-    apportionment: 0.3117
+    apportionment: 0.35126374597525645
   stream_response:
   - LPR:68925
   dd_response: []
@@ -3214,7 +3214,7 @@ well_68926:
   pumping_days: 60
   stream_apportionment228:
     name: LPR:68926
-    apportionment: 0.2951
+    apportionment: 0.3429344070868703
   stream_response:
   - LPR:68926
   dd_response: []
@@ -3228,7 +3228,7 @@ well_69049:
   pumping_days: 120
   stream_apportionment229:
     name: LPR:69049
-    apportionment: 0.9965
+    apportionment: 0.9233544207339791
   stream_response:
   - LPR:69049
   dd_response: []
@@ -3242,7 +3242,7 @@ well_69065:
   pumping_days: 300
   stream_apportionment230:
     name: LPR:69065
-    apportionment: 0.2901
+    apportionment: 0.24657115428198492
   stream_response:
   - LPR:69065
   dd_response: []
@@ -3256,7 +3256,7 @@ well_69282:
   pumping_days: 90
   stream_apportionment231:
     name: LPR:69282
-    apportionment: 0.753
+    apportionment: 0.5525983062281702
   stream_response:
   - LPR:69282
   dd_response: []
@@ -3270,7 +3270,7 @@ well_69288:
   pumping_days: 365
   stream_apportionment232:
     name: LPR:69288
-    apportionment: 0.0123
+    apportionment: 0.07671203105735105
   stream_response:
   - LPR:69288
   dd_response: []
@@ -3284,7 +3284,7 @@ well_69289:
   pumping_days: 90
   stream_apportionment233:
     name: LPR:69289
-    apportionment: 0.0046
+    apportionment: 0.0517723983539796
   stream_response:
   - LPR:69289
   dd_response: []
@@ -3298,7 +3298,7 @@ well_69480:
   pumping_days: 90
   stream_apportionment234:
     name: LPR:69480
-    apportionment: 0.1321
+    apportionment: 0.21874739930956416
   stream_response:
   - LPR:69480
   dd_response: []
@@ -3312,7 +3312,7 @@ well_69508:
   pumping_days: 90
   stream_apportionment235:
     name: LPR:69508
-    apportionment: 0.0239
+    apportionment: 0.09320786825930025
   stream_response:
   - LPR:69508
   dd_response: []
@@ -3326,7 +3326,7 @@ well_69576:
   pumping_days: 90
   stream_apportionment236:
     name: LPR:69576
-    apportionment: 0.0696
+    apportionment: 0.1450321578050685
   stream_response:
   - LPR:69576
   dd_response: []
@@ -3340,7 +3340,7 @@ well_69635:
   pumping_days: 120
   stream_apportionment237:
     name: LPR:69635
-    apportionment: 0.0092
+    apportionment: 0.08774938512523181
   stream_response:
   - LPR:69635
   dd_response: []
@@ -3354,7 +3354,7 @@ well_69636:
   pumping_days: 365
   stream_apportionment238:
     name: LPR:69636
-    apportionment: 0.0147
+    apportionment: 0.10884793463000392
   stream_response:
   - LPR:69636
   dd_response: []
@@ -3368,7 +3368,7 @@ well_69638:
   pumping_days: 365
   stream_apportionment239:
     name: LPR:69638
-    apportionment: 0.0147
+    apportionment: 0.10886448117229884
   stream_response:
   - LPR:69638
   dd_response: []
@@ -3382,7 +3382,7 @@ well_69669:
   pumping_days: 365
   stream_apportionment240:
     name: LPR:69669
-    apportionment: 0.0103
+    apportionment: 0.07026037219769364
   stream_response:
   - LPR:69669
   dd_response: []
@@ -3396,7 +3396,7 @@ well_69970:
   pumping_days: 120
   stream_apportionment241:
     name: LPR:69970
-    apportionment: 0.9679
+    apportionment: 0.8458549841051745
   stream_response:
   - LPR:69970
   dd_response: []
@@ -3410,7 +3410,7 @@ well_69990:
   pumping_days: 60
   stream_apportionment242:
     name: LPR:69990
-    apportionment: 0.0604
+    apportionment: 0.1445506452812261
   stream_response:
   - LPR:69990
   dd_response: []
@@ -3424,7 +3424,7 @@ well_70119:
   pumping_days: 150
   stream_apportionment243:
     name: LPR:70119
-    apportionment: 0.6793
+    apportionment: 0.5927074757201275
   stream_response:
   - LPR:70119
   dd_response: []
@@ -3438,7 +3438,7 @@ well_70120:
   pumping_days: 150
   stream_apportionment244:
     name: LPR:70120
-    apportionment: 0.6423
+    apportionment: 0.5726651173660285
   stream_response:
   - LPR:70120
   dd_response: []
@@ -3452,7 +3452,7 @@ well_70186:
   pumping_days: 90
   stream_apportionment245:
     name: LPR:70186
-    apportionment: 0.9598
+    apportionment: 0.7780957536320047
   stream_response:
   - LPR:70186
   dd_response: []
@@ -3466,7 +3466,7 @@ well_70191:
   pumping_days: 330
   stream_apportionment246:
     name: LPR:70191
-    apportionment: 0.0369
+    apportionment: 0.12023111871910504
   stream_response:
   - LPR:70191
   dd_response: []
@@ -3480,7 +3480,7 @@ well_70263:
   pumping_days: 90
   stream_apportionment247:
     name: LPR:70263
-    apportionment: 0.0101
+    apportionment: 0.06130603590171876
   stream_response:
   - LPR:70263
   dd_response: []
@@ -3494,7 +3494,7 @@ well_70517:
   pumping_days: 270
   stream_apportionment248:
     name: LPR:70517
-    apportionment: 0.0326
+    apportionment: 0.09818117292434846
   stream_response:
   - LPR:70517
   dd_response: []
@@ -3508,7 +3508,7 @@ well_70519:
   pumping_days: 365
   stream_apportionment249:
     name: LPR:70519
-    apportionment: 0.0327
+    apportionment: 0.09829064616122325
   stream_response:
   - LPR:70519
   dd_response: []
@@ -3522,7 +3522,7 @@ well_70520:
   pumping_days: 240
   stream_apportionment250:
     name: LPR:70520
-    apportionment: 0.0329
+    apportionment: 0.09850535567176412
   stream_response:
   - LPR:70520
   dd_response: []
@@ -3536,7 +3536,7 @@ well_70548:
   pumping_days: 90
   stream_apportionment251:
     name: LPR:70548
-    apportionment: 0.001
+    apportionment: 0.028566136067248706
   stream_response:
   - LPR:70548
   dd_response: []
@@ -3550,7 +3550,7 @@ well_70881:
   pumping_days: 150
   stream_apportionment252:
     name: LPR:70881
-    apportionment: 0.5963
+    apportionment: 0.46509730675928995
   stream_response:
   - LPR:70881
   dd_response: []
@@ -3564,7 +3564,7 @@ well_70961:
   pumping_days: 90
   stream_apportionment253:
     name: LPR:70961
-    apportionment: 0.0936
+    apportionment: 0.19302825405392707
   stream_response:
   - LPR:70961
   dd_response: []
@@ -3578,7 +3578,7 @@ well_70974:
   pumping_days: 365
   stream_apportionment254:
     name: LPR:70974
-    apportionment: 0.0927
+    apportionment: 0.19291055092139772
   stream_response:
   - LPR:70974
   dd_response: []
@@ -3592,7 +3592,7 @@ well_70975:
   pumping_days: 365
   stream_apportionment255:
     name: LPR:70975
-    apportionment: 0.0927
+    apportionment: 0.19291055092139772
   stream_response:
   - LPR:70975
   dd_response: []
@@ -3606,7 +3606,7 @@ well_71044:
   pumping_days: 120
   stream_apportionment256:
     name: LPR:71044
-    apportionment: 0.9129
+    apportionment: 0.7640388890968324
   stream_response:
   - LPR:71044
   dd_response: []
@@ -3620,7 +3620,7 @@ well_71062:
   pumping_days: 120
   stream_apportionment257:
     name: LPR:71062
-    apportionment: 0.1546
+    apportionment: 0.1795843732796481
   stream_response:
   - LPR:71062
   dd_response: []
@@ -3634,7 +3634,7 @@ well_71063:
   pumping_days: 120
   stream_apportionment258:
     name: LPR:71063
-    apportionment: 0.2058
+    apportionment: 0.206376550606979
   stream_response:
   - LPR:71063
   dd_response: []
@@ -3648,7 +3648,7 @@ well_71109:
   pumping_days: 365
   stream_apportionment259:
     name: LPR:71109
-    apportionment: 0.9185
+    apportionment: 0.7704948718125143
   stream_response:
   - LPR:71109
   dd_response: []
@@ -3662,7 +3662,7 @@ well_71110:
   pumping_days: 300
   stream_apportionment260:
     name: LPR:71110
-    apportionment: 0.8965
+    apportionment: 0.7464158501526951
   stream_response:
   - LPR:71110
   dd_response: []
@@ -3676,7 +3676,7 @@ well_71117:
   pumping_days: 90
   stream_apportionment261:
     name: LPR:71117
-    apportionment: 0.0932
+    apportionment: 0.15629214702623767
   stream_response:
   - LPR:71117
   dd_response: []
@@ -3690,7 +3690,7 @@ well_71156:
   pumping_days: 120
   stream_apportionment262:
     name: LPR:71156
-    apportionment: 0.0026
+    apportionment: 0.0412545826313069
   stream_response:
   - LPR:71156
   dd_response: []
@@ -3704,7 +3704,7 @@ well_71199:
   pumping_days: 270
   stream_apportionment263:
     name: LPR:71199
-    apportionment: 0.1683
+    apportionment: 0.24290085502256223
   stream_response:
   - LPR:71199
   dd_response: []
@@ -3718,7 +3718,7 @@ well_71495:
   pumping_days: 120
   stream_apportionment264:
     name: LPR:71495
-    apportionment: 0.352
+    apportionment: 0.3609171908699524
   stream_response:
   - LPR:71495
   dd_response: []
@@ -3732,7 +3732,7 @@ well_71935:
   pumping_days: 90
   stream_apportionment265:
     name: LPR:71935
-    apportionment: 0.2618
+    apportionment: 0.2963535946671694
   stream_response:
   - LPR:71935
   dd_response: []
@@ -3746,7 +3746,7 @@ well_71998:
   pumping_days: 90
   stream_apportionment266:
     name: LPR:71998
-    apportionment: 0.009
+    apportionment: 0.06122777480853361
   stream_response:
   - LPR:71998
   dd_response: []
@@ -3760,7 +3760,7 @@ well_72082:
   pumping_days: 120
   stream_apportionment267:
     name: LPR:72082
-    apportionment: 0.196
+    apportionment: 0.26287251951960444
   stream_response:
   - LPR:72082
   dd_response: []
@@ -3774,7 +3774,7 @@ well_72094:
   pumping_days: 120
   stream_apportionment268:
     name: LPR:72094
-    apportionment: 0.0258
+    apportionment: 0.10910111853614356
   stream_response:
   - LPR:72094
   dd_response: []
@@ -3788,7 +3788,7 @@ well_72095:
   pumping_days: 120
   stream_apportionment269:
     name: LPR:72095
-    apportionment: 0.0242
+    apportionment: 0.10552721378062017
   stream_response:
   - LPR:72095
   dd_response: []
@@ -3802,7 +3802,7 @@ well_72269:
   pumping_days: 150
   stream_apportionment270:
     name: LPR:72269
-    apportionment: 0.2027
+    apportionment: 0.21001761667855523
   stream_response:
   - LPR:72269
   dd_response: []
@@ -3816,7 +3816,7 @@ well_72301:
   pumping_days: 150
   stream_apportionment271:
     name: LPR:72301
-    apportionment: 0.0626
+    apportionment: 0.14607475046286808
   stream_response:
   - LPR:72301
   dd_response: []
@@ -3830,7 +3830,7 @@ well_72304:
   pumping_days: 120
   stream_apportionment272:
     name: LPR:72304
-    apportionment: 0.0641
+    apportionment: 0.14716358193131338
   stream_response:
   - LPR:72304
   dd_response: []
@@ -3844,7 +3844,7 @@ well_72421:
   pumping_days: 365
   stream_apportionment273:
     name: LPR:72421
-    apportionment: 0.0164
+    apportionment: 0.08242939763696733
   stream_response:
   - LPR:72421
   dd_response: []
@@ -3858,7 +3858,7 @@ well_72422:
   pumping_days: 60
   stream_apportionment274:
     name: LPR:72422
-    apportionment: 0.0125
+    apportionment: 0.07518009432051463
   stream_response:
   - LPR:72422
   dd_response: []
@@ -3872,7 +3872,7 @@ well_72436:
   pumping_days: 365
   stream_apportionment275:
     name: LPR:72436
-    apportionment: 0.0455
+    apportionment: 0.1555620129673131
   stream_response:
   - LPR:72436
   dd_response: []
@@ -3886,7 +3886,7 @@ well_72437:
   pumping_days: 60
   stream_apportionment276:
     name: LPR:72437
-    apportionment: 0.0397
+    apportionment: 0.14777791162383033
   stream_response:
   - LPR:72437
   dd_response: []
@@ -3900,7 +3900,7 @@ well_72607:
   pumping_days: 90
   stream_apportionment277:
     name: LPR:72607
-    apportionment: 0.2797
+    apportionment: 0.24282589394537277
   stream_response:
   - LPR:72607
   dd_response: []
@@ -3914,7 +3914,7 @@ well_72610:
   pumping_days: 90
   stream_apportionment278:
     name: LPR:72610
-    apportionment: 0.629
+    apportionment: 0.48849713373363723
   stream_response:
   - LPR:72610
   dd_response: []
@@ -3928,7 +3928,7 @@ well_72713:
   pumping_days: 365
   stream_apportionment279:
     name: LPR:72713
-    apportionment: 0.6071
+    apportionment: 0.4712484484829654
   stream_response:
   - LPR:72713
   dd_response: []
@@ -3942,7 +3942,7 @@ well_72756:
   pumping_days: 365
   stream_apportionment280:
     name: LPR:72756
-    apportionment: 0.4469
+    apportionment: 0.3519022296284035
   stream_response:
   - LPR:72756
   dd_response: []
@@ -3956,7 +3956,7 @@ well_72983:
   pumping_days: 30
   stream_apportionment281:
     name: LPR:72983
-    apportionment: 0.1781
+    apportionment: 0.215439265865974
   stream_response:
   - LPR:72983
   dd_response: []
@@ -3970,7 +3970,7 @@ well_73153:
   pumping_days: 90
   stream_apportionment282:
     name: LPR:73153
-    apportionment: 0.0993
+    apportionment: 0.20450809652996613
   stream_response:
   - LPR:73153
   dd_response: []
@@ -3984,7 +3984,7 @@ well_73262:
   pumping_days: 90
   stream_apportionment283:
     name: LPR:73262
-    apportionment: 0.0044
+    apportionment: 0.04943583790881745
   stream_response:
   - LPR:73262
   dd_response: []
@@ -3998,7 +3998,7 @@ well_73280:
   pumping_days: 150
   stream_apportionment284:
     name: LPR:73280
-    apportionment: 0.2941
+    apportionment: 0.3420236710386632
   stream_response:
   - LPR:73280
   dd_response: []
@@ -4012,7 +4012,7 @@ well_73281:
   pumping_days: 60
   stream_apportionment285:
     name: LPR:73281
-    apportionment: 0.3058
+    apportionment: 0.3497038624229526
   stream_response:
   - LPR:73281
   dd_response: []
@@ -4026,7 +4026,7 @@ well_73372:
   pumping_days: 365
   stream_apportionment286:
     name: LPR:73372
-    apportionment: 0.1032
+    apportionment: 0.2012507814531159
   stream_response:
   - LPR:73372
   dd_response: []
@@ -4040,7 +4040,7 @@ well_73440:
   pumping_days: 90
   stream_apportionment287:
     name: LPR:73440
-    apportionment: 0.0625
+    apportionment: 0.11827298936285134
   stream_response:
   - LPR:73440
   dd_response: []
@@ -4054,7 +4054,7 @@ well_73481:
   pumping_days: 120
   stream_apportionment288:
     name: LPR:73481
-    apportionment: 0.149
+    apportionment: 0.18854001296115266
   stream_response:
   - LPR:73481
   dd_response: []
@@ -4068,7 +4068,7 @@ well_73715:
   pumping_days: 120
   stream_apportionment289:
     name: LPR:73715
-    apportionment: 0.8271
+    apportionment: 0.6113610502658782
   stream_response:
   - LPR:73715
   dd_response: []
@@ -4082,7 +4082,7 @@ well_73737:
   pumping_days: 30
   stream_apportionment290:
     name: LPR:73737
-    apportionment: 0.0822
+    apportionment: 0.14773395506315692
   stream_response:
   - LPR:73737
   dd_response: []
@@ -4096,7 +4096,7 @@ well_73761:
   pumping_days: 240
   stream_apportionment291:
     name: LPR:73761
-    apportionment: 0.6283
+    apportionment: 0.48307451960283104
   stream_response:
   - LPR:73761
   dd_response: []
@@ -4110,7 +4110,7 @@ well_73762:
   pumping_days: 150
   stream_apportionment292:
     name: LPR:73762
-    apportionment: 0.6836
+    apportionment: 0.5127644034811172
   stream_response:
   - LPR:73762
   dd_response: []
@@ -4124,7 +4124,7 @@ well_73906:
   pumping_days: 365
   stream_apportionment293:
     name: LPR:73906
-    apportionment: 0.0922
+    apportionment: 0.1840926012478962
   stream_response:
   - LPR:73906
   dd_response: []
@@ -4138,7 +4138,7 @@ well_73940:
   pumping_days: 365
   stream_apportionment294:
     name: LPR:73940
-    apportionment: 0.0404
+    apportionment: 0.11157465586744117
   stream_response:
   - LPR:73940
   dd_response: []
@@ -4152,7 +4152,7 @@ well_73942:
   pumping_days: 30
   stream_apportionment295:
     name: LPR:73942
-    apportionment: 0.0451
+    apportionment: 0.11565215212598182
   stream_response:
   - LPR:73942
   dd_response: []
@@ -4166,7 +4166,7 @@ well_74131:
   pumping_days: 120
   stream_apportionment296:
     name: LPR:74131
-    apportionment: 0.002
+    apportionment: 0.03662162965478181
   stream_response:
   - LPR:74131
   dd_response: []
@@ -4180,7 +4180,7 @@ well_74280:
   pumping_days: 90
   stream_apportionment297:
     name: LPR:74280
-    apportionment: 0.0444
+    apportionment: 0.11205530220704993
   stream_response:
   - LPR:74280
   dd_response: []
@@ -4194,7 +4194,7 @@ well_84404:
   pumping_days: 300
   stream_apportionment298:
     name: LPR:84404
-    apportionment: 0.2402
+    apportionment: 0.24560102906256978
   stream_response:
   - LPR:84404
   dd_response: []
@@ -4208,7 +4208,7 @@ well_84409:
   pumping_days: 150
   stream_apportionment299:
     name: LPR:84409
-    apportionment: 0.8706
+    apportionment: 0.7217407233869233
   stream_response:
   - LPR:84409
   dd_response: []
@@ -4222,7 +4222,7 @@ well_84411:
   pumping_days: 120
   stream_apportionment300:
     name: LPR:84411
-    apportionment: 0.8706
+    apportionment: 0.7217407233869233
   stream_response:
   - LPR:84411
   dd_response: []
@@ -4236,7 +4236,7 @@ well_91103:
   pumping_days: 120
   stream_apportionment301:
     name: LPR:91103
-    apportionment: 0.0309
+    apportionment: 0.08652014381984474
   stream_response:
   - LPR:91103
   dd_response: []
@@ -4250,7 +4250,7 @@ well_91173:
   pumping_days: 60
   stream_apportionment302:
     name: LPR:91173
-    apportionment: 0.109
+    apportionment: 0.17761265410476923
   stream_response:
   - LPR:91173
   dd_response: []
@@ -4264,7 +4264,7 @@ well_91808:
   pumping_days: 90
   stream_apportionment303:
     name: LPR:91808
-    apportionment: 0.005
+    apportionment: 0.055905898432203026
   stream_response:
   - LPR:91808
   dd_response: []
@@ -4278,7 +4278,7 @@ well_91996:
   pumping_days: 365
   stream_apportionment304:
     name: LPR:91996
-    apportionment: 0.023
+    apportionment: 0.10171557914631836
   stream_response:
   - LPR:91996
   dd_response: []
@@ -4292,7 +4292,7 @@ well_91997:
   pumping_days: 120
   stream_apportionment305:
     name: LPR:91997
-    apportionment: 0.0245
+    apportionment: 0.10641907829746736
   stream_response:
   - LPR:91997
   dd_response: []
@@ -4306,7 +4306,7 @@ well_92099:
   pumping_days: 90
   stream_apportionment306:
     name: LPR:92099
-    apportionment: 0.0423
+    apportionment: 0.1009587679299053
   stream_response:
   - LPR:92099
   dd_response: []
@@ -4320,7 +4320,7 @@ well_92184:
   pumping_days: 240
   stream_apportionment307:
     name: LPR:92184
-    apportionment: 0.0797
+    apportionment: 0.13339697477063284
   stream_response:
   - LPR:92184
   dd_response: []
@@ -4334,7 +4334,7 @@ well_92299:
   pumping_days: 30
   stream_apportionment308:
     name: LPR:92299
-    apportionment: 0.0216
+    apportionment: 0.09517088932893059
   stream_response:
   - LPR:92299
   dd_response: []
@@ -4348,7 +4348,7 @@ well_92696:
   pumping_days: 60
   stream_apportionment309:
     name: LPR:92696
-    apportionment: 0.0012
+    apportionment: 0.028432598153366784
   stream_response:
   - LPR:92696
   dd_response: []
@@ -4362,7 +4362,7 @@ well_92714:
   pumping_days: 365
   stream_apportionment310:
     name: LPR:92714
-    apportionment: 0.0529
+    apportionment: 0.12092873458250906
   stream_response:
   - LPR:92714
   dd_response: []
@@ -4376,7 +4376,7 @@ well_92724:
   pumping_days: 330
   stream_apportionment311:
     name: LPR:92724
-    apportionment: 0.0068
+    apportionment: 0.05593969769414354
   stream_response:
   - LPR:92724
   dd_response: []
@@ -4390,7 +4390,7 @@ well_92743:
   pumping_days: 90
   stream_apportionment312:
     name: LPR:92743
-    apportionment: 0.0115
+    apportionment: 0.07286580861265209
   stream_response:
   - LPR:92743
   dd_response: []
@@ -4404,7 +4404,7 @@ well_92808:
   pumping_days: 90
   stream_apportionment313:
     name: LPR:92808
-    apportionment: 0.0431
+    apportionment: 0.1257831830644455
   stream_response:
   - LPR:92808
   dd_response: []
@@ -4418,7 +4418,7 @@ well_92885:
   pumping_days: 210
   stream_apportionment314:
     name: LPR:92885
-    apportionment: 0.2951
+    apportionment: 0.27326494621306513
   stream_response:
   - LPR:92885
   dd_response: []
@@ -4432,7 +4432,7 @@ well_92981:
   pumping_days: 60
   stream_apportionment315:
     name: LPR:92981
-    apportionment: 0.0253
+    apportionment: 0.08955073979290364
   stream_response:
   - LPR:92981
   dd_response: []
@@ -4446,7 +4446,7 @@ well_93142:
   pumping_days: 120
   stream_apportionment316:
     name: LPR:93142
-    apportionment: 0.417
+    apportionment: 0.37815056288097065
   stream_response:
   - LPR:93142
   dd_response: []
@@ -4460,7 +4460,7 @@ well_93143:
   pumping_days: 150
   stream_apportionment317:
     name: LPR:93143
-    apportionment: 0.4188
+    apportionment: 0.38039922371855656
   stream_response:
   - LPR:93143
   dd_response: []
@@ -4474,7 +4474,7 @@ well_93349:
   pumping_days: 90
   stream_apportionment318:
     name: LPR:93349
-    apportionment: 0.1989
+    apportionment: 0.2268191941424869
   stream_response:
   - LPR:93349
   dd_response: []
@@ -4488,7 +4488,7 @@ well_93422:
   pumping_days: 365
   stream_apportionment319:
     name: LPR:93422
-    apportionment: 0.0072
+    apportionment: 0.06345010990840348
   stream_response:
   - LPR:93422
   dd_response: []
@@ -4502,7 +4502,7 @@ well_93423:
   pumping_days: 365
   stream_apportionment320:
     name: LPR:93423
-    apportionment: 0.0071
+    apportionment: 0.06343943410732299
   stream_response:
   - LPR:93423
   dd_response: []
@@ -4516,7 +4516,7 @@ well_93424:
   pumping_days: 210
   stream_apportionment321:
     name: LPR:93424
-    apportionment: 0.0079
+    apportionment: 0.06606574802595284
   stream_response:
   - LPR:93424
   dd_response: []
@@ -4530,7 +4530,7 @@ well_93469:
   pumping_days: 60
   stream_apportionment322:
     name: LPR:93469
-    apportionment: 0.7911
+    apportionment: 0.5866852132337754
   stream_response:
   - LPR:93469
   dd_response: []
@@ -4544,7 +4544,7 @@ well_93832:
   pumping_days: 60
   stream_apportionment323:
     name: LPR:93832
-    apportionment: 0.0103
+    apportionment: 0.07030637516280734
   stream_response:
   - LPR:93832
   dd_response: []
@@ -4558,7 +4558,7 @@ well_94302:
   pumping_days: 120
   stream_apportionment324:
     name: LPR:94302
-    apportionment: 0.8775
+    apportionment: 0.7280264108812761
   stream_response:
   - LPR:94302
   dd_response: []
@@ -4572,7 +4572,7 @@ well_94988:
   pumping_days: 180
   stream_apportionment325:
     name: LPR:94988
-    apportionment: 0.0703
+    apportionment: 0.14514257994634408
   stream_response:
   - LPR:94988
   dd_response: []
@@ -4586,7 +4586,7 @@ well_95068:
   pumping_days: 30
   stream_apportionment326:
     name: LPR:95068
-    apportionment: 0.1252
+    apportionment: 0.1643211293822576
   stream_response:
   - LPR:95068
   dd_response: []
