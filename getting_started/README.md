@@ -31,7 +31,7 @@ mamba env create -f environment.yml
 This will create a new Python environment called `pycap` with all the necessary packages installed. If you do not have `mamba` installed, you can use `conda` instead:
 
 ```shell
-mamba env create -f environment.yml
+conda env create -f environment.yml
 ```
 
 To activate the environment, type
