@@ -18,31 +18,55 @@ At this point, the students have read, summarized, and presented on a technical 
  
 ## -----------------------------------------------------------------------------------
 ## The Little Plover Study - Milestones
- - Read about the area to understand the hydrogeologic and hydrometeorological setting.  Learn about how and why the Little Plover was deemed to be oversubscribed.  Humanize a range of water users to understand their relationship with groundwater and how they value it.  Based on fairness, equity, or other value measures, describe at least three approaches that could be used to reapportion water use.  Each approach should allow for variable total reduction in water extraction.  For example, each user could be reduced by a fixed percent based on their average pumping over the last ten years: the fixed percent could be 1, 2, 5, 25 until the total capture is acceptable.  Justify the fairness of each approach.     
- - 'Read' the MODFLOW model and 'reverse engineer' a conceptual model of the Little Plover.  Run the MODFLOW model once to determine the run time.  Discuss how the model could be run to determine the depletion reduction for a range of implementation levels (e.g. percent reduction for each pumped well).  Estimate the time that woudl be required to modify the MODFLOW input files, run the model, and extract the results of interest for each implementation level.  Discuss the practicality of using MODFLOW for this analysis.  
- - Introduce the analytical solution.  Ideally, show them a comparison of the solution with pumping from one well to introduce the idea of 'validating' an analytical solution based on a numerical model; compare this to calibrating a groundwater model against observations.  If practical, also show the results for multiple interfering wells.  Use the analytical model to determine the capture fraction of all of the wells in the basin.  Each group should use the analytical model to implement one reallocation strategy over a range of implementation levels.    
- - Share the capture versus implementation level results among the groups.  Each group should consider the costs to all stakeholders of each reallocation strategy.  For three given levels of total capture reduction, they should choose an optimal realloation strategy and justify the choice to three different stakeholder groups.  After completing this, reflect on what parts of this process you feel should be the professional domain of a hydrogeologist.  For any area that is outside of the scope of a hydrogeologist, justify its exclusion and, if possible, describe the expertise needed to address this area.
- - Produce a draft report.  This is a technical report and your audience is a board of elected officials, government experts, and citizens who will jointly decide how to reallocate pumping rights.  You do not need to explain any technical concepts to the audience.  But you should justify your technical decisions - such as using the analytical solution for your analyses.  You should clearly state any assumptions that you make about how different stakeholders value water.  You should present your technical work in sufficient detail that a professional hydrogeologist could replicate your work.  
+0. OVERALL OBJECTIVE
+- Your task is to describe how a groundwater model can be used to support and improve water allocation decision making in a multi-stakeholder context.
+- Your weekly objectives and subtasks are listed below.
+- Be sure to read all of the milestones at the beginning of the project so that you know how they fit together and support the final report and presentation.
+1. BACKGROUND
+- Read about the area to understand the hydrogeologic and hydrometeorological setting.
+- Learn about how and why the Little Plover was deemed to be oversubscribed.
+- Humanize a range of water users to understand their relationship with groundwater and how they value it.
+- Based on fairness, equity, or other value measures, describe at least three approaches that could be used to reapportion water use.  Each approach should allow for variable total reduction in water extraction.  For example, each user could be reduced by a fixed percent based on their average pumping over the last ten years: the fixed percent could be 1, 2, 5, 25 until the total capture is acceptable.  Justify the fairness of each approach.     
+2. THE NUMERICAL SOLUTION
+- 'Read' the MODFLOW model and 'reverse engineer' a conceptual model of the Little Plover that is consistent with the model.
+- Run the MODFLOW model once to determine the run time.   (**MIKE - I PRESUME THAT WE ARE JUST WORKING WITH THE STEADY STATE MODEL?**) 
+- Discuss how the MODFLOW model could be used to determine the depletion reduction for a range of implementation levels (e.g. percent reduction for each pumped well).  Estimate the time that woudl be required to modify the MODFLOW input files, run the model, and extract the results of interest for each implementation level.  
+3. THE ANALYTICAL SOLUTION
+- Read supporting publications that underlie the analytical solution.
+- Learn how to run the analytical code.
+- Compare the capture calculated for one well with the analytical solution with that based on MODFLOW.  Discuss why it is or is not acceptable to validate an analytical solution based on the similarity of its results to a numerical model; compare this to calibrating a groundwater model against observations.
+- Use the analytical model to determine the capture fraction of each well in the basin.
+- Use the analytical model to implement one reallocation strategy to hit a single target reduction in total capture.  For this example of simple optimization, demonstrate that there are mulitple combinations of reducing pumping in wells to achieve the goal and then come up with a basis on which to choose the 'best' strategy (e.g. minimum overall reduction of pumping).  Relate this strategy to the fairness, equity, or other measures that you identified previously.
+- Reflect on the value of using the analytical model instead of MODFLOW for this analysis - provide an estimate of the time saved.    
+4. PARETO OPTIMIZATION 
+- Repeat the previous step for multiple target reductions of capture.  The purpose-built code will show the Pareto front and dominated (suboptimal) solutions.  Explain what is meant by Pareto Optimal solutions in a way that it relates dominated solutions to the Pareto Front and it explains the need for additional constraints to find a single 'best' solution.
+5. MULTIOBJECTIVE OPTIMIZATION
+- Repeat the Pareto Optimization from the point of view of three different stakeholders.  This may require that a reduction in pumping is subjected to a value-of-pumped-water relation or that streamflow be related to fish health, for example.
+- Discuss how the Pareto fronts for all three stakeholders relate to the Pareto front developed in the previous step.
+- Discuss how the Pareto optimal solutions of all three stakeholders can be considered or combined to find optimal compromise solutions.
+- Reflect on which parts of this process you feel should and should not be in the professional domain of a hydrogeologist.  For any area that is outside of the scope of a hydrogeologist, justify its exclusion and, if possible, describe the expertise needed to address this area.
+6. REPORT AND PRESENTATION
+- Your audience will be technical staff at the Department of Natural Resources as well as stakeholders who might be affected by pumping reductions.
+- The tone of your report should be aimed at a professional audience, include explanations of key concepts in the appendices for non-experts.
+- Your presentation should be no more than 15 minutes.
+- Expect to get questions that are based on your technical approach as well as questions from stakeholders who may not be pleased with your recommendations.
+- You should clearly state any assumptions that you make about how different stakeholders value water.
+- You should present your technical work in sufficient detail that a professional hydrogeologist could replicate your work. For context, you have been called in as a technical expert to advise a process by which elected officials, government experts, and citizens will jointly decide how to reallocate pumping rates.   
  
-## -----------------------------------------------------------------------------------
-## Major Steps
-- Background reading: students should gain an appreciation for the range of water 'users' and how they value water.  Ideally, this will include some information on the value of water to farmers (for different crops, as needed) and the fish vs flow curve. It would be great if we could include one or both of: value per volume of water by crop type and marginal cost of pumping reduction - presumably an s-curve of some type with relative value of 1 for current pumping rate and down to some level of reduction, 0 above some level of reduction, and a smooth (or ramped) transition.
-- Simple optimization: each group may choose any number of wells to reduce, each at any level of reduction, to meet or exceed a streamflow target.  Each group should find three 'plans' that meet the objective equally well and then give a rationale to support one plan over the others.  
-- Pareto optimization: placing wide limits on the level of reduction (or increase), do single parameter optimization aimed at meeting the flow target while maximizing total pumping.  Present the results as a ranked series with x- as the rank (1=best) and y- as the total streamflow,  Identify their three plans by red dots.  Identify their preferred plan by a red star.  Discuss their three plans in the context of automated optimization.  Provide an initial reflection on the value of automated optimization and on the use of the surrogate analytical model versus MODFLOW.
-- Multiobjective optimization: produce the tradeoff of streamflow versus total reduction, only loosely constraining the increase/decrease in pumping for a single well.  Then each group will describe three 'fair' plans to impose (e.g. reduce proportional to capture fraction with no well reduced more than 50%).  They will produce the pareto plot (grey and blue dots) for each plan.  Then they will superimpose the Pareto fronts for their three plans and for the initial, relatively unconstrained optimization.  From this, they will discuss the 'cost' of the fairness limits that they imposed. They will propose their best plan.  The Pareto fronts for the best plans for all four teams will be shown on a common plot together with the unconstrained case.  
-- Multiobjective optimization in 'value' space: streamflow will be translated into 'stream health' based on the fish versus flow plot and total pumping will be translated to 'economic value' based on the value/volume or marginal reduction in value relation.  Unconstrained multiobjective optimization will be performed as will the four optimal plans.  As above, the Pareto fronts for the best plans for all four teams will be shown on a common plot together with the unconstrained case.  Each team should decide on the optimal plan and defend their choice based on scientific grounds and on the basis of fairness. 
-
 ## -----------------------------------------------------------------------------------
 ## The Little Plover Study - Needs
  - Background material on the hydrogeologic and hydrometeorological setting.
  - Background material on the assessment that the Little Plover is oversubscribed - also introduces the major stakeholder groups.
  - Background material for students to read to be able to humanize a range of water users to understand their relationship with groundwater and how they value it - can be more general than the Little Plover.
+ - Links to references on how groundwater value can be defined for different stakeholders and specific information on the value of water to farmers (for different crops, as needed), the fish vs flow curve, and the cost of pumping.
  - Links to resources introducing fairness, equity, or other value measures - ideally as they relate to groundwater, but more general references can also be useful.
  - Access to the MODFLOW input files so that they can 'read' the model and assess how difficult it might be to modify the inputs to conduct their analyses.
- - The MODFLOW model set up so that it can be run as it exists - MF6 would be great, but MODFLOW2005 would be fine for now - they should be able to do this without too much handholding.    
+ - The MODFLOW model set up so that it can be run as it exists and so that it can be used to examine the suitability of superposition, and so that it can be used to calculate the capture fraction of one well.    
  - The analytical solution(s) - key references and the Jupyter Notebook to implement it.
- - Guidance on how to compare the numerical and analytical solutions for one well and two or more wells.  
- - Links to references on how groundwater value can be defined for different stakeholders
+ - Guidance on how to compare the numerical and analytical solutions for capture fraction of one well and interference of two wells (to assess the validity of superposition).
+ - The Pareto optimal code that shows the Pareto front and dominated solutions (as an option)
+   
+
  
 
 
