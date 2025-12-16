@@ -1,15 +1,14 @@
 ## Philosophy of the Project Progression
 
-- The sequence of five projects are designed to prepare the students to complete their own independent research project at the end of the program.
+- The sequence of four projects are designed to prepare the students to complete their own independent research project at the end of the program.
 - There are five projects, building in complexity and autonomy.  The topics are:
      1. Introduce your home watershed - a qualitative presentation of the student's level of hydrogeologic knowledge upon entering the program - water availability and quality
      2. Explain an Arizona Department of Water Resources model report to a general audience - tackling technical concepts and presentation of data without the need to complete quantitative analyses - water balance and salinity
      3. Use the MODFLOW model from the previous study to examine zone of influence, capture zone, and capture and to explore superposition - modifying and using a MODFLOW model to understand hydrogeologic systems - pumping effects and arsenic
      4. Use analytical models to examine higher dimensional problems, specifically 'fair' water allocation in the Little Plover - using groundwater models to address water resources decision making - capture
-     5. Use a solute transport model to examine contamination - student can choose a model of nitrate cycling or PFAS mobilization - sensitivity analysis, prediction uncertainty, coupled modeling, unsaturated flow and transport
 - Each project lasts five weeks and students are given weekly milestones (ungraded) to guide them in planning completion of a long term project
-- Projects 3, 4, and 5 are completd in three-person teams.  Each team has a project manager, an analyst, and a data wrangler with specified roles.
-- Project 6 is a five-week period put aside for students to propose their scientific investigation, develop milestones, and begin their work.  Students will spend a minimum of 6 weeks in the summer with no classes, working exclusively on their projects. 
+- Projects 3 and 4 are completd in three-person teams.  Each team has a project manager, an analyst, and a data wrangler with specified roles.
+- After Project 4, students begin working on their indepedent research.  They will propose their scientific question, develop milestones, complete and defend their work.  Students will continue a minimum of 6 weeks in the summer with no classes, working exclusively on their projects. 
 
 ## -----------------------------------------------------------------------------------
 ## The Little Plover Study - General Learning Objectives
@@ -19,21 +18,23 @@ At this point, the students have read, summarized, and presented on a technical 
 ## -----------------------------------------------------------------------------------
 ## The Little Plover Study - Milestones
 0. OVERALL OBJECTIVE
-- Your task is to describe how a groundwater model can be used to support and improve water allocation decision making in a multi-stakeholder context.
+- Your task is to describe how a groundwater model can be used to support and improve water allocation decision making in a multi-stakeholder context as part of a team of experts.
 - Your weekly objectives and subtasks are listed below.
-- Be sure to read all of the milestones at the beginning of the project so that you know how they fit together and support the final report and presentation.  
+- Be sure to read all of the milestones at the beginning of the project so that you know how they fit together and support the final report and presentation.
 
 1. BACKGROUND
 - Read about the area to understand the hydrogeologic and hydrometeorological setting.
 - Learn about how and why the Little Plover was deemed to be oversubscribed.
-- Humanize a range of water users to understand their relationship with groundwater and how they value it.
-- Based on fairness, equity, or other value measures, describe at least three approaches that could be used to reapportion water use.  Each approach should allow for variable total reduction in water extraction.  For example, each user could be reduced by a fixed percent based on their average pumping over the last ten years: the fixed percent could be 1, 2, 5, 25 until the total capture is acceptable.  Justify the fairness of each approach. Note: each well can be operated independently.   
-- Hydrologic models report everything in units of water. What does society base their decisions on? Is there a meaningful streamflow relevant for fish? Can we convert pumping in a well to $$? Are there publicly available datasets? Which would we need?
- 
+- Humanize a range of water users to understand their relationship with groundwater and how they value it.  That is, while hydrologic models report in units of water, stakeholders make decisions based on economic value, or environmental health, or water supply reliability.  How can hydrologic model results be translated to these units?  Which datasets would you need?  Are they publicly available?  At this stage, you should propose how this could be done, constructing a workflow diagram, but you do not need to find the site-specific data to accomplish this translation.
+- Because water resources management requires actions from multiple participants, there are commonly multiple possible plans to meet any objective.  In the LPR, you can assume that the pumping rate can be controlled separately for each well.  Based on fairness, equity, or other value measures, describe at least three approaches that could be used to reapportion water use in the LPR.  Each approach should allow for variable total reduction in water extraction.  For example, each user could be reduced by a fixed percent based on their average pumping over the last ten years: the fixed percent could be 1, 2, 5, 25 until the total capture is acceptable.  Justify the fairness of each of your three approaches.
+- Background references will be provided.
+
 2. THE NUMERICAL SOLUTION
-- 'Read' the MODFLOW model and 'reverse engineer' a conceptual model of the Little Plover that is consistent with the model.
-- Run the MODFLOW model once to determine the run time.   (**MIKE - I PRESUME THAT WE ARE JUST WORKING WITH THE STEADY STATE MODEL?**) 
-- Discuss how the MODFLOW model could be used to determine the depletion reduction for a range of implementation levels (e.g. percent reduction for each pumped well).  Estimate the time that would be required to modify the MODFLOW input files, run the model, and extract the results of interest for each implementation level.  
+- 'Read' the MODFLOW model and 'reverse engineer' a conceptual model of the Little Plover that is consistent with the model.  This should include a description of the components of the water balance, boundary conditions, hydraulic parameter distributions, and pumping scheduling.
+- Run the stready state MODFLOW model once to determine the run time.  Include a short description of what is and is not described with a steady state model that is relevant to stream capture.  
+- Discuss how the MODFLOW model could be used to determine the depletion reduction (or fraction of water provided by capturing streamflow) for a given well.
+- Discuss how the MODFLOW model coudl be used to determine the recution in stream capture that would result by altering the steady state pumping rate by a different amount for ten different wells.  Estimate the time that would be required to modify the MODFLOW input files, run the model, and extract the results to be used to determine the impact of this single pumping reduction plan on stream capture.
+- The MODFLOW file, including all input files, will be provided.
 
 3. THE ANALYTICAL SOLUTION
 - Read supporting publications that underlie the analytical solution.
@@ -42,26 +43,30 @@ At this point, the students have read, summarized, and presented on a technical 
 - Use the analytical model to determine the capture fraction of each well in the basin.
 - Inspect the analytical solution to determine which parameters are most important. How are these represented in the MODFLOW formulation? Is anything included in the MODFLOW formulation missing from the analytical. 
 - Use the analytical model to implement one reallocation strategy to hit a single target reduction in total capture [starting with a historical value of 8.6 CFS at Hoover, evaluate configurations of pumping that do not reduce from this value to below to Public Rights Flow of 6.8 CFS at Hoover].  For this example of simple optimization, demonstrate that there are mulitple combinations of reducing pumping in wells to achieve the goal and then come up with a basis on which to choose the 'best' strategy (e.g. minimum overall reduction of pumping).  Relate this strategy to the fairness, equity, or other measures that you identified previously.
-- Reflect on the value of using the analytical model instead of MODFLOW for this analysis - provide an estimate of the time saved.    
+- Reflect on the value of using the analytical model instead of MODFLOW for this analysis - provide an estimate of the time saved.
+- References describing the analytical solution, the code to run the analytical solution to determine depletion reduction for one well, and the code to determine the change in stream capture by altering pumping from multiple wells are provided.
 
 4. PARETO OPTIMIZATION  
-- Repeat the previous step for multiple target reductions of capture.  The purpose-built code will show the Pareto front and dominated (suboptimal) solutions.  Explain what is meant by Pareto Optimal solutions in a way that it relates dominated solutions to the Pareto Front and it explains the need for additional constraints to find a single 'best' solution.  
+- Repeat the previous step for multiple target reductions of capture.  The purpose-built code will show the Pareto front and dominated (suboptimal) solutions.  Explain what is meant by Pareto Optimal solutions in a way that it relates dominated solutions to the Pareto Front and it explains the need for additional constraints to find a single 'best' solution.
+- Choose one of your 'fairness' criteria and find the Pareto solutions with this added.
+- Plot the Pareto optimal solutions with and without the fairness criterion on the same axes.  Discuss the 'costs' and 'benefits' of adding a fairness criterion.  
+- Code to implement Pareto optimization for stream capture versus pumping reduction with the option to add a 'fairness' criterion is provided.
 
 5. PARETO OPTIMIZATION IN DECISION-RELEVANT UNITS  
-- Convert stream Q to fish proability of occurrence units
-- Convert well pumping to agricultural receipts 
-- Optimization from the point of view of three different stakeholders. This may require that a reduction in pumping is subjected to a value-of-pumped-water relation or that streamflow be related to fish health, for example.
-- Discuss how the Pareto fronts for all three stakeholders relate to the Pareto front developed in the previous step.
-- Discuss how the Pareto optimal solutions of all three stakeholders can be considered or combined to find optimal compromise solutions.
-- Reflect on which parts of this process you feel should and should not be in the professional domain of a hydrogeologist.  For any area that is outside of the scope of a hydrogeologist, justify its exclusion and, if possible, describe the expertise needed to address this area.  
+- Convert stream flow to probability of fish occurrence units and well pumping to agricultural receipts.
+- Complete three Pareto optimizations: pumping reduction and fish occurence; streamflow and agricultural receipts; and agricultural receipts and fish occurence. Discuss how each curve could be used to support water water allocation decision-making.
+- Plot the three Pareto fronts on the streamflow versus pumping reduction axes.  Discuss the 'costs' and 'benefits' of optimizing in decision-relevant units.
+- Repeat the agricultural receipts and fish occurence optimization with three different fairness criteria applied.  Discuss how these solutions could be used to guide water resources allocation decisions.
+- Reflect on which parts of this process you feel should and should not be in the professional domain of a hydrogeologist.  For any area that is outside of the scope of a hydrogeologist, justify its exclusion and, if possible, describe the expertise needed to address this area.
+- Curves relating probability of fish occurence versus streamflow and an explanation of how well pumping is converted to agricultural receipts are provided.  A code that can implement one or both of these conversions and complete Pareto optimization with or without a fairness criterion applied is provided.
 
 6. REPORT AND PRESENTATION
-- Your audience will be technical staff at the Department of Natural Resources as well as stakeholders who might be affected by pumping reductions.
-- The tone of your report should be aimed at a professional audience, include explanations of key concepts in the appendices for non-experts.
-- Your presentation should be no more than 15 minutes.
-- Expect to get questions that are based on your technical approach as well as questions from stakeholders who may not be pleased with your recommendations.
+- Your audience will be technical staff at the Department of Natural Resources as well as stakeholders who might be affected directly by pumping reductions.
+- You should present your technical work in sufficient detail that a professional hydrogeologist could replicate your work. For context, you have been called in as a technical expert to advise a process by which elected officials, government experts, and citizens will jointly decide how to reallocate pumping rates.  
 - You should clearly state any assumptions that you make about how different stakeholders value water.
-- You should present your technical work in sufficient detail that a professional hydrogeologist could replicate your work. For context, you have been called in as a technical expert to advise a process by which elected officials, government experts, and citizens will jointly decide how to reallocate pumping rates.   
+- The tone of your report should be aimed at a professional audience, include explanations of key concepts in the appendices for non-experts.
+- Your presentation should be no more than 15 minutes long plus 10 minutes for questions.
+- Expect to get questions that are based on your technical approach as well as questions from stakeholders who may not be pleased with your recommendations.  Be prepared to describe and explain your fairness criteria.
  
 ## -----------------------------------------------------------------------------------
 ## The Little Plover Study - Needs
