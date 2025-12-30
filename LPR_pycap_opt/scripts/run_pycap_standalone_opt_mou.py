@@ -87,7 +87,7 @@ def standalone_worker(initial_dict, bdplobs, rootname='mou'):
 
 if __name__== "__main__":
     initial_dict, bdplobs = instantiate()
-    standalone_worker(initial_dict, bdplobs)
+    standalone_worker(initial_dict, bdplobs,rootname=sys.argv[1])
 
 
 

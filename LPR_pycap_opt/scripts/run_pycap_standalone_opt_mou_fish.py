@@ -99,7 +99,7 @@ def standalone_worker(initial_dict, bdplobs, fishcurve, ref_flow, rootname='mou_
 
 if __name__== "__main__":
     initial_dict, bdplobs, fishcurve, ref_flow = instantiate()
-    standalone_worker(initial_dict, bdplobs, fishcurve, ref_flow)
+    standalone_worker(initial_dict, bdplobs, fishcurve, ref_flow,rootname=sys.argv[1])
 
 
 
