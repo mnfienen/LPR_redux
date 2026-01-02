@@ -1,6 +1,7 @@
 # MODFLOW-6 SFR input; created by SFRmaker v. 0.12.1.post54+g1f885a0
 
 BEGIN Options
+	OBS6 FILEIN sfr_obs.obs
   unit_conversion  128390.4
   auxiliary line_id
 END Options
@@ -4133,7 +4134,7 @@ BEGIN Connectiondata
   770 -771 769
   771 -772 770
   772 771
-  773 
+  773
   774 -775
   775 -776 774
   776 -777 775
