@@ -5,6 +5,8 @@ BEGIN Options
   PRINT_INPUT
   PRINT_FLOWS
   SAVE_FLOWS
+    AUTO_FLOW_REDUCE_CSV FILEOUT flow_reduce.csv
+
 END Options
 
 BEGIN Dimensions
