@@ -1,4 +1,4 @@
-# MODFLOW-6 SFR input; created by SFRmaker v. 0.12.1.post54+g1f885a0
+# MODFLOW-6 SFR input; created by SFRmaker v. 0.13.0
 
 BEGIN Options
   unit_conversion  128390.4
