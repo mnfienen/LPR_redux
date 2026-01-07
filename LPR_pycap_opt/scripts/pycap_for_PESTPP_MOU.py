@@ -46,15 +46,32 @@ def prepare_MOU_files(pump_lbound_fraction=0,
     fish_path = Path('../Inputs/fish_curves')
     econ_path = Path('../econ')
 
+    #### set path to save configurations in
+    configs_path = Path('./configurations')
+    if not configs_path.exists():
+        configs_path.mkdir()
+
     #### finally define the scripts directory
     script_path = Path("../scripts")
 
     #### Path at which to run MOU
-    MASTER_path = pest_path / f"MASTER_{scenario_name}"
+    run_path = pest_path / f"run_{scenario_name}"
 
     # ### Let's check out the fish curves 
     ref_q = 8.6
     
+    ### prepare to save the run options 
+    run_options = {
+        'depletion_potential_threshold': depletion_potential_threshold,
+        'objectives': objectives,
+        'pump_lbound_fraction': pump_lbound_fraction,
+        'pump_ubound_fraction': pump_ubound_fraction,
+        'ref_q': ref_q,
+        'run_path': str(run_path),
+        'scenario_name': scenario_name
+    }
+
+
     with open(configs_path / f'{scenario_name}.yml', 'w+') as ofp:
         yaml.dump(run_options, ofp)
     print(f"wrote configuration to: {str(configs_path / scenario_name)}.yml")
@@ -210,8 +227,8 @@ def prepare_MOU_files(pump_lbound_fraction=0,
     # tell PESTPP-MOU about the new file
     pst.pestpp_options["mou_dv_population_file"] = 'initial_dvpop.csv'
     # reset the decision variable bounds
-    pars.loc[pars.pargp=="pumping","parlbnd"] = pars.loc[pars.pargp=="pumping", "parval1"]*pump_lbound_fraction 
-    pars.loc[pars.pargp=="pumping","parubnd"] = pars.loc[pars.pargp=="pumping", "parval1"]*pump_ubound_fraction
+    pars.loc[pars.pargp=="decvars","parlbnd"] = pars.loc[pars.pargp=="decvars", "parval1"]*pump_lbound_fraction 
+    pars.loc[pars.pargp=="decvars","parubnd"] = pars.loc[pars.pargp=="decvars", "parval1"]*pump_ubound_fraction
 
 
     # ### now we need to identify the (competing) objectives. This is a bit complex now, based on the user requests
@@ -281,8 +298,8 @@ def prepare_MOU_files(pump_lbound_fraction=0,
     pst.write(str(template_path / f"{scenario_name}.pst"), version=2)
 
     # Copy over directories
-    if MASTER_path.exists():
-        shutil.rmtree(MASTER_path)
+    if run_path.exists():
+        shutil.rmtree(run_path)
     # copy over the binaries into template first so they get distributed
 
     configs_path = Path('./configurations')
@@ -295,7 +312,7 @@ def prepare_MOU_files(pump_lbound_fraction=0,
         'pump_lbound_fraction':pump_lbound_fraction,
         'pump_ubound_fraction':pump_ubound_fraction,
         'depletion_potential_threshold': depletion_potential_threshold,
-        'run_path': str(MASTER_path),
+        'run_path': str(run_path),
         'ref_q': ref_q,
         'num_reals': num_reals     
     }
@@ -319,12 +336,12 @@ def prepare_MOU_files(pump_lbound_fraction=0,
         shutil.copy2(fish_path / 'Brook.csv',
                 template_path / 'Brook.csv')         
         
-    # finally populate the MASTER path with the template_path files
-    shutil.copytree(template_path, MASTER_path)
-    os.remove(MASTER_path / 'allobs.out')
+    # finally populate the run path with the template_path files
+    shutil.copytree(template_path, run_path)
+    os.remove(run_path / 'allobs.out')
 
-    print(f"ALL READY TO RUN:\n scenario: {scenario_name}\n directory: {MASTER_path}")
-    return scenario_name, MASTER_path
+    print(f"ALL READY TO RUN:\n scenario: {scenario_name}\n directory: {run_path}")
+    return scenario_name, run_path
 
 
 def postprocess_MOU(run_name, run_path):
