@@ -20,7 +20,9 @@ import matplotlib
 import matplotlib.colors as mcolors
 
 
-
+#######################################################################################
+# function to create all files necessary to run Multiple Objective Optimization (MOU) #
+#######################################################################################
 def prepare_MOU_files(pump_lbound_fraction=0,
                       pump_ubound_fraction=1.2,
                       objectives='fish_dollars', #'dep_q','fish_q', or 'fish_dollars'
@@ -343,7 +345,9 @@ def prepare_MOU_files(pump_lbound_fraction=0,
     print(f"ALL READY TO RUN:\n scenario: {scenario_name}\n directory: {run_path}")
     return scenario_name, run_path
 
-
+#######################################################################################
+# function to summarize MOU output and only include feasible, non-dominated solutions #
+#######################################################################################
 def postprocess_MOU(run_name, run_path):
     pareto_df = pd.read_csv(run_path / f"{run_name}.pareto.archive.summary.csv.zip")
 
@@ -363,25 +367,28 @@ def postprocess_MOU(run_name, run_path):
         if ccol in pareto_df.columns:
             pareto_df = pareto_df.rename(columns={ccol:newcol})
     return pareto_df
-
+#######################################################################################################
+# function to support interactive plotting of a pareto curve highlighting evoluation over generations #
+#######################################################################################################
 def plot_pareto(currgen, pareto_df):
     x_ax = pareto_df.columns[3]
     y_ax = pareto_df.columns[2]
     fig,ax = plt.subplots()
     ax.scatter(pareto_df[x_ax], pareto_df[y_ax], c='.5', marker='.', alpha=.4)
     currdf = pareto_df.loc[pareto_df.generation==currgen]
-
-    
     ax.scatter(currdf[x_ax], currdf[y_ax], c='b', marker='.')
     ax.set_title(f'Pareto Tradeoff for Generation {currgen}')
     ax.set_xlabel(x_ax)
     ax.set_ylabel(y_ax)
     plt.show()
 
+####################################################################################################
+# function to align objective values on the pareto frontier with the associated decision variables #
+####################################################################################################
 def prep_for_viz(pareto_df, final_generation, run_path, run_name, dollar_objective):
     #### Base directory for runs
     parent_run_path = Path("../pycap_runs")
-
+    econ_path = Path('../econ')
     #### depletion potential calculations directory
     base_run_path = parent_run_path / "pycap_base"
     dp = gp.read_file(base_run_path / 'depletion_potential.json')
@@ -391,16 +398,14 @@ def prep_for_viz(pareto_df, final_generation, run_path, run_name, dollar_objecti
     pars = pst.parameter_data
     
     # create DataFrame of parameters
-    pars_df = pd.read_csv(run_path / 'wells_and_receipts.csv', index_col=0)
+    pars_df = pars['parval1'].to_frame()
 
     # subset decision variables to the realizations that are included in the pareto curve
     pareto_df_final = pareto_df.loc[pareto_df.generation==final_generation]
     # read in all the decision variable pumping rates
     dv_df = pd.concat([pd.read_csv(i, index_col=0)
                    for i in run_path.glob("*dv_pop*")])
-    if dollar_objective:
-        for cc in dv_df.columns:
-            dv_df.loc[dv_df[cc]<=pars.loc[cc,'parval1']*.7,cc]=0
+ 
 
     dv_df = pd.concat([dv_df, pd.read_csv(run_path / 'initial_dvpop.csv', index_col=0)])
     dv_df.index = [str(i) for i in dv_df.index]
@@ -415,10 +420,21 @@ def prep_for_viz(pareto_df, final_generation, run_path, run_name, dollar_objecti
     pars_df['geometry'] = dv_df.loc[pars_df.index,'geometry']
     pars_df = gp.GeoDataFrame(pars_df, crs=dv_df.crs)
 
+    if dollar_objective:
+        for cc in dv_df.columns:
+            dv_df.loc[dv_df[cc]<=pars.loc[cc,'parval1']*.7,cc]=0
+        receipts = pd.read_csv(econ_path / 'total_receipts.csv', index_col=0)
+        pars_df=pars_df.merge(receipts['total_receipts'], 
+                      left_on = 'wellno', 
+                      right_index=True, 
+                      how='outer').fillna(0)
     for cc in dv_df.columns:
         if 'geometry' not in cc:
             dv_df[cc] /= pars_df.loc[dv_df.index,'parval1'].values
     return pareto_df_final, dv_df
+##############################################################################################################
+# function to set up interactive plot of pareto frontier with maps of decision variable pumping arrangements #
+##############################################################################################################
 
 def create_viz_app(pareto_df_final, dv_df):
     app = dash.Dash(__name__)
