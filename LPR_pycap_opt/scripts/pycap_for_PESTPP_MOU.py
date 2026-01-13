@@ -514,3 +514,35 @@ def create_viz_app(pareto_df_final, dv_df):
     return app
 
 
+def plot_pareto_with_scenarios(pareto_df, scenarios=None):
+
+    x_ax = pareto_df.columns[3]
+    y_ax = pareto_df.columns[2]
+    fig,ax = plt.subplots()
+    ax.scatter(pareto_df[x_ax], pareto_df[y_ax], c='.5', marker='.', alpha=.4)
+    currdf = pareto_df.loc[pareto_df.generation==pareto_df.generation.max()]
+    ax.scatter(currdf[x_ax], currdf[y_ax], c='b', marker='.')
+    ax.set_title(f'Pareto Tradeoff and Scenarios')
+
+    if scenarios is None:
+        print('no scenarios provided')
+    else:
+        if not isinstance(scenarios,list):
+            scenarios = [scenarios]
+        scen_dict = {cscen: pd.read_csv(f'../pycap_runs/student_run/{cscen}_results.csv') 
+                     for cscen in scenarios}
+        if 'receipt' in y_ax.lower():
+            y_col = 'receipts'
+        else:
+            y_col = 'wells_total_q'
+        if 'trout' in x_ax.lower():
+            x_col = 'fish_prob'
+        else:
+            x_col = 'total_depletion'
+        for scen,dat in scen_dict.items():
+            ax.scatter(dat[x_col],dat[y_col],marker='x', c='red')
+
+
+    ax.set_xlabel(x_ax)
+    ax.set_ylabel(y_ax)
+    plt.show()

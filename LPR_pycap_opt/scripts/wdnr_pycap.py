@@ -1,5 +1,77 @@
 import pandas as pd
 import yaml
+from pycap.analysis_project import Project
+import numpy as np
+
+
+def pycap_metrics(depl, well_dict, combdict, base_run_path, pycap_run_name):
+    # we need some extra information
+    fishcurve = pd.read_csv('../Inputs/fish_curves/Brook.csv', index_col=1)['POmeasure']
+    receipts = pd.read_csv('../econ/total_receipts.csv', index_col=0)
+    orig_q = pd.read_excel('../Inputs/LPR_Prepped_IDW.xlsx', sheet_name='HCW_Inputs', index_col=0)
+    orig_q.index = [f'well_{i}__q' for i in orig_q.index]
+
+    # well-by-well pumping rates
+    well_keys = [i for i in well_dict.keys() if i.startswith('well_')]
+
+    pars = list()
+    parvals = list()
+
+    # then again for pumping rate Q
+    for k in well_keys:
+        cpar = f'{k}__q'
+        pars.append(cpar)
+        parvals.append(well_dict[k]['Q'])
+        
+    pars_df = pd.DataFrame(index = pars, data= {'parval1':parvals})
+
+    # get the total pumping in all wells in GPM regardless of censoring
+    wells_total_q = pars_df['parval1'].sum()
+
+    pars_df['wellno'] = [int(i.split('_')[1]) for i in pars_df.index]
+    pars_df=pars_df.merge(receipts['total_receipts'], 
+                      left_on = 'wellno', 
+                      right_index=True, 
+                      how='outer').fillna(0)
+    pars_df = pars_df.merge(orig_q['Q_gpm'],left_index=True,
+                  right_index=True).rename(columns={'Q_gpm':'orig_q'})
+    # set all pumping rates <= 0.7 times original pumping rate to 0
+    pars_df.loc[pars_df.parval1 <= 0.7*pars_df.orig_q, 'parval1'] = 0
+    # then get a new total pumping set where low rates are cut off
+    wells_total_q_ag = pars_df['parval1'].sum()
+
+    # now we need to know the receipts value
+    total_receipts = (pars_df.parval1 / pars_df.orig_q * pars_df.total_receipts).sum()
+
+    # now get the total depletion
+    total_depletion = depl.loc['total_combined','LPR']
+
+    # finally, we need to recalculate depletion after having turned off some of the wells
+    # because they fell below the 70% threshold
+    pars_df['yml_wellname'] = [i.split('__')[0] for i in pars_df.index]
+    for i in pars_df.yml_wellname:
+        cQ = pars_df.loc[pars_df.yml_wellname==i,'parval1'].values[0]
+        combdict[i]['Q'] = float(cQ)
+    with open(base_run_path / 'tmprun.yml', "w") as file:
+        documents = yaml.dump(combdict, file, default_flow_style=False, sort_keys=False)
+    ap = Project(base_run_path /  'tmprun.yml')
+    ap.report_responses()
+    ap.write_responses_csv()
+    new_depl = pd.read_csv(
+            base_run_path / f"output/tmprun.table_report.base_stream_depletion.csv",
+                        index_col = 0).loc['total_combined','LPR']
+    ref_flow=8.6
+    fish_prob =  np.interp(ref_flow - new_depl,
+                  fishcurve.index,
+                  fishcurve.values)
+    retvals = pd.DataFrame(index=[pycap_run_name],
+                           data={'wells_total_q':[wells_total_q],
+                                 'wells_total_q_ag':[wells_total_q_ag],
+                                 'receipts':[total_receipts],
+                                 'total_depletion':[total_depletion],
+                                 'truncated_depletion':[new_depl],
+                                 'fish_prob':[fish_prob]})
+    return retvals
 
 def Excel2YML(pycap_inputs_excel, pycap_run_name, pycap_run_path):
     # read in the raw files from excel
