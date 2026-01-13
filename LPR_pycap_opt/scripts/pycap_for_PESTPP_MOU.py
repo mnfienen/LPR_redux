@@ -419,15 +419,16 @@ def prep_for_viz(pareto_df, final_generation, run_path, run_name, dollar_objecti
     pars_df.index = [i.split('__')[0] for i in pars_df.index]
     pars_df['geometry'] = dv_df.loc[pars_df.index,'geometry']
     pars_df = gp.GeoDataFrame(pars_df, crs=dv_df.crs)
-
     if dollar_objective:
         for cc in dv_df.columns:
-            dv_df.loc[dv_df[cc]<=pars.loc[pars.wellname==dv_df[cc].index,'parval1'].values*.7,cc]=0
+            if 'geometry' not in cc:
+                dv_df.loc[dv_df[cc]<=pars.loc[pars.wellname==dv_df[cc].index,'parval1'].values*.7,cc]=0
         receipts = pd.read_csv(econ_path / 'total_receipts.csv', index_col=0)
+        pars_df['wellno'] = [int(i.split('_')[1]) for i in pars_df.index]
         pars_df=pars_df.merge(receipts['total_receipts'], 
-                      left_on = 'wellno', 
-                      right_index=True, 
-                      how='outer').fillna(0)
+                            left_on = 'wellno', 
+                            right_index=True, 
+                            how='outer').fillna(0)
     for cc in dv_df.columns:
         if 'geometry' not in cc:
             dv_df[cc] /= pars_df.loc[dv_df.index,'parval1'].values
