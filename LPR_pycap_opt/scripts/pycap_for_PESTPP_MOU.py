@@ -422,7 +422,7 @@ def prep_for_viz(pareto_df, final_generation, run_path, run_name, dollar_objecti
 
     if dollar_objective:
         for cc in dv_df.columns:
-            dv_df.loc[dv_df[cc]<=pars.loc[cc,'parval1']*.7,cc]=0
+            dv_df.loc[dv_df[cc]<=pars.loc[pars.wellname==dv_df[cc].index,'parval1'].values*.7,cc]=0
         receipts = pd.read_csv(econ_path / 'total_receipts.csv', index_col=0)
         pars_df=pars_df.merge(receipts['total_receipts'], 
                       left_on = 'wellno', 
