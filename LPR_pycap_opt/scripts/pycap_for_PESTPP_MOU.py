@@ -452,15 +452,21 @@ def create_viz_app(pareto_df_final, dv_df):
         fig = px.scatter(
             pareto_df_final, x=x_ax, y=y_ax, title="Pareto Tradeoff"
         )
+        
+        # fig = px.scatter(
+        #     pareto_df_final.set_index('member')[[x_ax,y_ax]], title="Pareto Tradeoff"
+        # )
+        # fig.update_traces(mode="markers")
         if clickData:
             index = clickData['points'][0]['pointIndex']
             fig.add_trace(
                 px.scatter(
-                    pareto_df_final.iloc[[index]],x=x_ax, y=y_ax
+                    pareto_df_final.iloc[[index]],x=x_ax, y=y_ax, color='member'
                 ).update_traces(
                     marker=dict(size=15, color='red', line=dict(width=2, color='black'))
                 ).data[0]
             )
+        fig.update_layout(showlegend=False)
         return fig
 
     app.layout = html.Div([
